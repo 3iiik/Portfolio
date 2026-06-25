@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "3iik Studio | Web Design & Development — Modern Websites for Algerian Businesses",
-  description:
-    "Professional web design and development for Algerian businesses. Fast, modern, mobile-friendly websites that build trust and attract customers.",
+  metadataBase: new URL("https://3iik-studio.vercel.app"),
+  title: "3iik Studio | Web Design & Development",
+  description: "Modern Websites for Algerian Businesses",
   keywords: [
     "web development",
     "web design Algeria",
@@ -36,17 +36,24 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "3iik Studio | Web Design & Development",
-    description:
-      "Modern websites for Algerian businesses. Professional web design and development services.",
+    description: "Modern Websites for Algerian Businesses",
     type: "website",
     locale: "fr_DZ",
     siteName: "3iik Studio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1920,
+        height: 1080,
+        alt: "3iik Studio",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "3iik Studio | Web Design & Development",
-    description:
-      "Modern websites for Algerian businesses. Professional web design and development services.",
+    description: "Modern Websites for Algerian Businesses",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
