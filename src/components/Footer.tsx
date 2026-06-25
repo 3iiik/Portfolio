@@ -51,18 +51,31 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li>
                 <a
-                  href="https://wa.me/213XXXXXXXXX"
+                  href="https://facebook.com/3iik.dev"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-muted transition-colors hover:text-foreground"
                 >
-                  WhatsApp
+                  Facebook
                 </a>
               </li>
               <li>
-                <span className="text-sm text-muted">
-                  hello@3iikstudio.com
-                </span>
+                <a
+                  href="https://m.me/3iik.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted transition-colors hover:text-foreground"
+                >
+                  Messenger
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:3iikStudio@proton.me"
+                  className="text-sm text-muted transition-colors hover:text-foreground"
+                >
+                  3iikStudio@proton.me
+                </a>
               </li>
               <li>
                 <span className="text-sm text-muted">Algeria</span>

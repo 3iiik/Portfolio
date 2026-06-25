@@ -1,8 +1,8 @@
 {
   "site": {
-    "title": "3iik Studio | Web Design & Développement — Sites Web Modernes pour les Entreprises Algériennes",
+    "title": "3iik Studio | Développement & Conception Web — Sites Web Modernes pour les Entreprises Algériennes",
     "description": "Création de sites web professionnels pour les entreprises algériennes. Des sites rapides, modernes et adaptés aux mobiles qui inspirent confiance et attirent des clients.",
-    "ogTitle": "3iik Studio | Web Design & Développement",
+    "ogTitle": "3iik Studio | Développement & Conception Web",
     "ogDescription": "Des sites web modernes pour les entreprises algériennes. Services professionnels de conception et développement web."
   },
   "nav": {
@@ -11,18 +11,18 @@
     "pricing": "Tarifs",
     "faq": "FAQ",
     "contact": "Contact",
-    "contactWhatsApp": "Contactez-moi sur WhatsApp"
+    "contactMessenger": "Contactez-moi sur Messenger"
   },
   "header": {
-    "subtitle": "Web Design & Développement"
+    "subtitle": "Développement & Conception Web"
   },
   "hero": {
-    "badge": "Web Design & Développement — Algérie",
+    "badge": "Développement & Conception Web — Algérie",
     "title": "Des Sites Web Modernes Qui Aident les Entreprises à",
     "titleAccent": "Grandir",
     "subtitle": "Des sites rapides, professionnels et adaptés aux mobiles, conçus pour inspirer confiance et attirer des clients. Obtenez un site web qui travaille aussi dur que vous.",
     "viewProjects": "Voir les Projets",
-    "contactWhatsApp": "Contactez-moi sur WhatsApp"
+    "contactMessenger": "Contactez-moi sur Messenger"
   },
   "services": {
     "label": "Ce que je propose",
@@ -225,15 +225,15 @@
   "cta": {
     "heading": "Prêt à Développer Votre Entreprise en Ligne ?",
     "description": "Obtenez un site web moderne et professionnel qui aide vos clients à découvrir votre entreprise, à faire confiance à votre marque et à vous contacter facilement.",
-    "contactWhatsApp": "Contactez-moi sur WhatsApp",
+    "contactMessenger": "Contactez-moi sur Messenger",
     "freeConsultation": "Demander un Devis Gratuit"
   },
   "contact": {
     "label": "Me Contacter",
     "heading": "Construisons Votre Prochain Site Web",
     "description": "Prêt à lancer votre entreprise en ligne ? Contactez-moi et créons ensemble quelque chose de formidable.",
-    "trustMessage": "La plupart des projets commencent par une conversation rapide sur WhatsApp.",
-    "chatWhatsApp": "Discuter sur WhatsApp",
+    "trustMessage": "La plupart des projets commencent par un message rapide sur Messenger.",
+    "chatMessenger": "Envoyer un Message",
     "orDivider": "ou envoyez un message",
     "formName": "Nom Complet",
     "formNamePlaceholder": "Votre nom",

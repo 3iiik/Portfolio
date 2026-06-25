@@ -11,7 +11,7 @@ export default function Pricing() {
     features: string[];
   }[]);
 
-  const prices = ["15,000", "35,000", "60,000"];
+  const prices = ["12,000", "25,000", "45,000"];
 
   return (
     <section id="pricing" className="py-20 sm:py-28">
@@ -86,7 +86,7 @@ export default function Pricing() {
               </ul>
 
               <a
-                href="https://wa.me/213XXXXXXXXX"
+                href="https://m.me/3iik.dev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`mt-8 inline-flex h-12 w-full items-center justify-center rounded-full text-sm font-semibold transition-all active:scale-95 ${

@@ -11,7 +11,7 @@
     "pricing": "Pricing",
     "faq": "FAQ",
     "contact": "Contact",
-    "contactWhatsApp": "Contact on WhatsApp"
+    "contactMessenger": "Contact on Messenger"
   },
   "header": {
     "subtitle": "Web Design & Development"
@@ -22,7 +22,7 @@
     "titleAccent": "Grow",
     "subtitle": "Fast, professional, mobile-friendly websites designed to build trust and attract customers. Get a website that works as hard as you do.",
     "viewProjects": "View Projects",
-    "contactWhatsApp": "Contact on WhatsApp"
+    "contactMessenger": "Contact on Messenger"
   },
   "services": {
     "label": "What I Offer",
@@ -225,15 +225,15 @@
   "cta": {
     "heading": "Ready to Grow Your Business Online?",
     "description": "Get a modern, professional website that helps customers discover your business, trust your brand, and contact you easily.",
-    "contactWhatsApp": "Contact on WhatsApp",
+    "contactMessenger": "Contact on Messenger",
     "freeConsultation": "Request a Free Consultation"
   },
   "contact": {
     "label": "Get in Touch",
     "heading": "Let's Build Your Next Website",
     "description": "Ready to take your business online? Get in touch and let's create something great together.",
-    "trustMessage": "Most projects start with a quick WhatsApp conversation.",
-    "chatWhatsApp": "Chat on WhatsApp",
+    "trustMessage": "Most projects start with a quick message on Messenger.",
+    "chatMessenger": "Send a Message",
     "orDivider": "or send a message",
     "formName": "Full Name",
     "formNamePlaceholder": "Your name",
