@@ -11,17 +11,21 @@ import {
 
 import fr from "@/messages/fr.json";
 import en from "@/messages/en.json";
+import ar from "@/messages/ar.json";
 
-export type Locale = "fr" | "en";
+export type Locale = "fr" | "en" | "ar";
 
-const messages: Record<Locale, Record<string, unknown>> = { fr, en };
+const messages: Record<Locale, Record<string, unknown>> = { fr, en, ar };
 
 type LanguageContextType = {
   locale: Locale;
   setLocale: (locale: Locale) => void;
   t: (path: string) => string;
   tm: (path: string) => unknown;
+  dir: "ltr" | "rtl";
 };
+
+const isRtl = (locale: Locale) => locale === "ar";
 
 const LanguageContext = createContext<LanguageContextType | null>(null);
 
@@ -46,12 +50,17 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored === "fr" || stored === "en") {
+    if (stored === "fr" || stored === "en" || stored === "ar") {
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setLocaleState(stored);
     }
     setMounted(true);
   }, []);
+
+  useEffect(() => {
+    document.documentElement.dir = isRtl(locale) ? "rtl" : "ltr";
+    document.documentElement.lang = locale;
+  }, [locale]);
 
   const setLocale = useCallback((newLocale: Locale) => {
     setLocaleState(newLocale);
@@ -80,14 +89,14 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     };
     const fallbackTm = (path: string): unknown => getNested(messages.fr, path);
     return (
-      <LanguageContext.Provider value={{ locale: "fr", setLocale, t: fallbackT, tm: fallbackTm }}>
+      <LanguageContext.Provider value={{ locale: "fr", setLocale, t: fallbackT, tm: fallbackTm, dir: "ltr" }}>
         {children}
       </LanguageContext.Provider>
     );
   }
 
   return (
-    <LanguageContext.Provider value={{ locale, setLocale, t, tm }}>
+    <LanguageContext.Provider value={{ locale, setLocale, t, tm, dir: isRtl(locale) ? "rtl" : "ltr" }}>
       {children}
     </LanguageContext.Provider>
   );

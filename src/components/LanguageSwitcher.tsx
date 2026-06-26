@@ -5,6 +5,7 @@ import { useLanguage, type Locale } from "@/context/LanguageContext";
 const locales: { code: Locale; label: string }[] = [
   { code: "fr", label: "FR" },
   { code: "en", label: "EN" },
+  { code: "ar", label: "AR" },
 ];
 
 export default function LanguageSwitcher() {
@@ -22,7 +23,7 @@ export default function LanguageSwitcher() {
               ? "bg-primary text-white"
               : "text-muted hover:text-foreground"
           }`}
-          aria-label={`Switch language to ${lang.code === "fr" ? "Français" : "English"}`}
+          aria-label={`Switch language to ${lang.code === "fr" ? "Français" : lang.code === "en" ? "English" : "العربية"}`}
         >
           {lang.label}
         </button>

@@ -11,7 +11,7 @@
     "pricing": "Tarifs",
     "faq": "FAQ",
     "contact": "Contact",
-    "contactMessenger": "Contactez-moi sur Messenger"
+    "contactMessenger": "Contactez-moi sur Instagram"
   },
   "header": {
     "subtitle": "Développement & Conception Web"
@@ -22,7 +22,7 @@
     "titleAccent": "Grandir",
     "subtitle": "Des sites rapides, professionnels et adaptés aux mobiles, conçus pour inspirer confiance et attirer des clients. Obtenez un site web qui travaille aussi dur que vous.",
     "viewProjects": "Voir les Projets",
-    "contactMessenger": "Contactez-moi sur Messenger"
+    "contactMessenger": "Contactez-moi sur Instagram"
   },
   "services": {
     "label": "Ce que je propose",
@@ -118,6 +118,7 @@
       }
     ],
     "liveDemo": "Démo en Direct",
+    "learnMore": "En Savoir Plus",
     "viewDetails": "Code Source"
   },
   "process": {
@@ -249,14 +250,14 @@
   "cta": {
     "heading": "Prêt à Développer Votre Entreprise en Ligne ?",
     "description": "Obtenez un site web moderne et professionnel qui aide vos clients à découvrir votre entreprise, à faire confiance à votre marque et à vous contacter facilement.",
-    "contactMessenger": "Contactez-moi sur Messenger",
+    "chatMessenger": "Contacter sur Instagram",
     "freeConsultation": "Demander un Devis Gratuit"
   },
   "contact": {
     "label": "Me Contacter",
     "heading": "Construisons Votre Prochain Site Web",
     "description": "Prêt à lancer votre entreprise en ligne ? Contactez-moi et créons ensemble quelque chose de formidable.",
-    "trustMessage": "La plupart des projets commencent par un message rapide sur Messenger.",
+    "trustMessage": "La plupart des projets commencent par un message rapide sur Instagram.",
     "chatMessenger": "Envoyer un Message",
     "orDivider": "ou envoyez un message",
     "formName": "Nom Complet",

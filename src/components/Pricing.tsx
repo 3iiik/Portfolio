@@ -114,7 +114,7 @@ export default function Pricing() {
               </ul>
 
               <a
-                href="https://m.me/3iik.dev"
+                href="https://instagram.com/3iik.dev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`mt-8 inline-flex h-12 w-full items-center justify-center rounded-full text-sm font-semibold transition-all active:scale-95 ${

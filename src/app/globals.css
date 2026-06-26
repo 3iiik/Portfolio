@@ -12,6 +12,7 @@
   --color-card: #ffffff;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-arabic: var(--font-cairo);
 }
 
 html {
@@ -22,6 +23,11 @@ body {
   background: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+html[lang="ar"] body,
+html[lang="ar"] [dir="rtl"] {
+  font-family: var(--font-arabic), var(--font-sans), sans-serif;
 }
 
 @keyframes fadeInUp {

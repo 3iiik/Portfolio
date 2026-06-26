@@ -98,7 +98,7 @@ export default function Portfolio() {
                       rel="noopener noreferrer"
                       className="flex-1 rounded-full bg-foreground px-4 py-2.5 text-center text-xs font-semibold text-white transition-all hover:bg-foreground/90 active:scale-95"
                     >
-                      {t("portfolio.liveDemo")}
+                      {data.slug === "forca" ? t("portfolio.learnMore") : t("portfolio.liveDemo")}
                     </a>
                     <a
                       href={data.githubUrl}

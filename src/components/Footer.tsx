@@ -61,12 +61,12 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://m.me/3iik.dev"
+                  href="https://instagram.com/3iik.dev"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-muted transition-colors hover:text-foreground"
                 >
-                  Messenger
+                  Instagram
                 </a>
               </li>
               <li>

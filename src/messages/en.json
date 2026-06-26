@@ -11,7 +11,7 @@
     "pricing": "Pricing",
     "faq": "FAQ",
     "contact": "Contact",
-    "contactMessenger": "Contact on Messenger"
+    "contactMessenger": "Contact on Instagram"
   },
   "header": {
     "subtitle": "Web Design & Development"
@@ -22,7 +22,7 @@
     "titleAccent": "Grow",
     "subtitle": "Fast, professional, mobile-friendly websites designed to build trust and attract customers. Get a website that works as hard as you do.",
     "viewProjects": "View Projects",
-    "contactMessenger": "Contact on Messenger"
+    "contactMessenger": "Contact on Instagram"
   },
   "services": {
     "label": "What I Offer",
@@ -118,6 +118,7 @@
       }
     ],
     "liveDemo": "Live Demo",
+    "learnMore": "Learn More",
     "viewDetails": "Source Code"
   },
   "process": {
@@ -249,14 +250,14 @@
   "cta": {
     "heading": "Ready to Grow Your Business Online?",
     "description": "Get a modern, professional website that helps customers discover your business, trust your brand, and contact you easily.",
-    "contactMessenger": "Contact on Messenger",
+    "chatMessenger": "Contact on Instagram",
     "freeConsultation": "Request a Free Consultation"
   },
   "contact": {
     "label": "Get in Touch",
     "heading": "Let's Build Your Next Website",
     "description": "Ready to take your business online? Get in touch and let's create something great together.",
-    "trustMessage": "Most projects start with a quick message on Messenger.",
+    "trustMessage": "Most projects start with a quick message on Instagram.",
     "chatMessenger": "Send a Message",
     "orDivider": "or send a message",
     "formName": "Full Name",
