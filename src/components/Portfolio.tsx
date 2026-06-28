@@ -32,6 +32,13 @@ const projectsData = [
     githubUrl: "https://github.com/3iiik/Forca",
     tags: ["Electron", "TypeScript", "WebSocket"],
   },
+  {
+    slug: "roastmycv",
+    image: "/images/projects/roastmycv.jpg",
+    demoUrl: "https://roastmycv-production.up.railway.app",
+    githubUrl: "https://github.com/3iiik/RoastMyCV",
+    tags: ["Node.js", "Gemini AI", "PDF.js"],
+  },
 ];
 
 export default function Portfolio() {

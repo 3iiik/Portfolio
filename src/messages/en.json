@@ -115,6 +115,11 @@
         "title": "Forca",
         "category": "Desktop App",
         "description": "An open-source Windows productivity app that automatically blocks distracting websites using Focus Zones and a browser extension."
+      },
+      {
+        "title": "RoastMyCV",
+        "category": "AI Web App",
+        "description": "A free AI-powered tool that roasts your resume brutally, rewrites it professionally, scores it out of 100, and highlights your biggest mistakes — all from a simple PDF upload."
       }
     ],
     "liveDemo": "Live Demo",

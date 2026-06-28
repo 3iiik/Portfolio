@@ -115,6 +115,11 @@
         "title": "Forca",
         "category": "Application Bureau",
         "description": "Une application de productivité open-source pour Windows qui bloque automatiquement les sites distrayants grâce à des zones de focus et une extension navigateur."
+      },
+      {
+        "title": "RoastMyCV",
+        "category": "App Web IA",
+        "description": "Un outil IA gratuit qui critique votre CV sans pitié, le réécrit professionnellement, lui donne un score sur 100 et met en évidence vos plus grandes erreurs — à partir d'un simple upload PDF."
       }
     ],
     "liveDemo": "Démo en Direct",
