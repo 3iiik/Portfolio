@@ -72,15 +72,23 @@ export default function Pricing() {
 
         <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {plans.map((plan, index) => {
-            const isMostPopular = index === 1;
-            const isBestValue = activeTab === "qrMenu" && index === 2;
+            const isFeatured = index === 1;
+            const isMostPopular = activeTab !== "qrMenu" && index === 1;
+            const isBestValue = activeTab === "qrMenu" && index === 1;
+
+            const orderClass =
+              index === 0
+                ? "order-2 lg:order-1"
+                : index === 1
+                  ? "order-1 lg:order-2"
+                  : "order-3";
 
             return (
               <div
                 key={plan.name}
-                className={`relative flex h-full flex-col rounded-2xl border p-8 ${
-                  isMostPopular
-                    ? "border-primary bg-primary text-white shadow-xl shadow-primary/20"
+                className={`relative flex h-full flex-col rounded-2xl border p-8 ${orderClass} ${
+                  isFeatured
+                    ? "border-primary bg-primary text-white shadow-xl shadow-primary/20 z-10 lg:scale-[1.05]"
                     : "border-border bg-card"
                 }`}
               >
@@ -95,22 +103,22 @@ export default function Pricing() {
                   </div>
                 )}
 
-                <h3 className={`text-xl font-semibold ${isMostPopular ? "text-white" : "text-foreground"}`}>
+                <h3 className={`text-xl font-semibold ${isFeatured ? "text-white" : "text-foreground"}`}>
                   {plan.name}
                 </h3>
-                <p className={`mt-1 text-sm ${isMostPopular ? "text-white/80" : "text-muted"}`}>
+                <p className={`mt-1 text-sm ${isFeatured ? "text-white/80" : "text-muted"}`}>
                   {plan.description}
                 </p>
 
                 <div className="mt-6">
-                  <span className={`text-sm font-medium ${isMostPopular ? "text-white/70" : "text-muted"}`}>
+                  <span className={`text-sm font-medium ${isFeatured ? "text-white/70" : "text-muted"}`}>
                     {t("pricing.startingFrom")}
                   </span>
                   <div className="mt-1">
-                    <span className={`text-4xl font-bold ${isMostPopular ? "text-white" : "text-foreground"}`}>
+                    <span className={`text-4xl font-bold ${isFeatured ? "text-white" : "text-foreground"}`}>
                       {plan.price ?? "—"}
                     </span>
-                    <span className={`ml-1 text-lg ${isMostPopular ? "text-white/80" : "text-muted"}`}>
+                    <span className={`ml-1 text-lg ${isFeatured ? "text-white/80" : "text-muted"}`}>
                       DZD
                     </span>
                   </div>
@@ -121,7 +129,7 @@ export default function Pricing() {
                     <li key={feature} className="flex items-center gap-3 text-sm">
                       <svg
                         className={`h-5 w-5 flex-shrink-0 ${
-                          isMostPopular ? "text-white" : "text-primary"
+                          isFeatured ? "text-white" : "text-primary"
                         }`}
                         fill="none"
                         viewBox="0 0 24 24"
@@ -141,7 +149,7 @@ export default function Pricing() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`mt-auto inline-flex h-12 w-full items-center justify-center rounded-full text-sm font-semibold transition-all active:scale-95 ${
-                    isMostPopular
+                    isFeatured
                       ? "bg-white text-primary hover:bg-white/90"
                       : "bg-foreground text-white hover:bg-foreground/90"
                   }`}

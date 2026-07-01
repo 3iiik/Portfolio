@@ -214,20 +214,20 @@
       {
         "name": "QR Menu Starter",
         "price": "25 000",
-        "description": "Offrez à vos clients une façon interactive d'explorer votre menu avant de commander.",
+        "description": "Une solution QR simple pour digitaliser votre menu et laisser les clients explorer avant de commander.",
         "features": ["Autocollants QR premium imprimés", "QR code lié à votre menu digital", "Prêt à placer sur les tables", "Installation rapide"]
+      },
+      {
+        "name": "Expérience Restaurant Complète",
+        "price": "35 000",
+        "description": "Le package complet — site web, menu digital, QR codes et visualisation 3D des plats — tout ce qu'il faut pour votre restaurant.",
+        "features": ["Site web restaurant complet", "Menu digital", "Visualisation 3D des plats", "Autocollants QR premium imprimés", "Contact & localisation", "Optimisé SEO"]
       },
       {
         "name": "Menu 3D",
         "price": "30 000",
         "description": "Les clients visualisent les plats en 3D en scannant un QR code — sans application.",
-        "features": ["Site web menu digital", "QR code", "Visualisation 3D des plats", "Adapté aux mobiles", "Mises à jour faciles"]
-      },
-      {
-        "name": "Expérience Restaurant Complète",
-        "price": "35 000",
-        "description": "Le package complet — site web, menu digital, QR codes et visualisation 3D des plats.",
-        "features": ["Site web restaurant complet", "Menu digital", "Système QR code", "Visualisation 3D des plats", "Autocollants QR premium imprimés", "Design responsive moderne", "Contact & localisation", "Prêt pour le SEO"]
+        "features": ["Site web menu digital", "QR code", "Visualisation 3D des plats", "Optimisé mobile", "Mises à jour faciles"]
       }
     ]
   },

@@ -214,20 +214,20 @@
       {
         "name": "QR Menu Starter",
         "price": "25 000",
-        "description": "Give your customers an interactive way to explore your menu before ordering.",
-        "features": ["Printed premium QR code stickers", "QR code linked to your digital menu", "Ready to place on tables", "Fast setup"]
+        "description": "A simple QR code solution to digitize your menu and let customers browse before ordering.",
+        "features": ["Premium printed QR stickers", "QR code linked to your digital menu", "Ready to place on restaurant tables", "Fast installation"]
       },
       {
-        "name": "3D Menu",
-        "price": "30 000",
-        "description": "Customers can view dishes in 3D by scanning a QR code — no app needed.",
-        "features": ["Digital menu website", "QR code", "View dishes in 3D", "Mobile friendly", "Easy menu updates"]
-      },
-      {
-        "name": "Complete Restaurant Experience",
+        "name": "Restaurant Experience Complete",
         "price": "35 000",
-        "description": "The full package — website, digital menu, QR codes, and 3D meal viewing.",
-        "features": ["Complete restaurant website", "Digital menu", "QR code system", "3D meal viewer", "Printed premium QR stickers", "Modern responsive design", "Contact & location", "SEO ready"]
+        "description": "The complete package — website, digital menu, QR codes, and 3D dish viewer — everything your restaurant needs.",
+        "features": ["Complete restaurant website", "Digital menu", "3D dish viewer", "Premium printed QR stickers", "Contact & Maps", "SEO optimized"]
+      },
+      {
+        "name": "Menu 3D",
+        "price": "30 000",
+        "description": "Let customers view dishes in 3D by scanning a QR code — no app needed.",
+        "features": ["Digital menu website", "QR code", "3D dish viewer", "Mobile optimized", "Easy menu updates"]
       }
     ]
   },
