@@ -21,18 +21,19 @@ const cairo = Cairo({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://3iik-studio.vercel.app"),
-  title: "3iik Studio | Web Design & Development",
-  description: "Modern Websites for Algerian Businesses",
+  title: "3iik Studio | Web Services & Digital Solutions",
+  description: "Modern Web Solutions for Algerian Businesses",
   keywords: [
-    "web development",
-    "web design Algeria",
+    "web services",
+    "digital solutions",
+    "web development Algeria",
     "Algeria",
     "business websites",
     "freelance web developer",
     "3iik Studio",
-    "website designer Algeria",
     "création site web Algérie",
     "développeur web Algérie",
+    "solutions web Algérie",
   ],
   alternates: {
     languages: {
@@ -42,8 +43,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "3iik Studio | Web Design & Development",
-    description: "Modern Websites for Algerian Businesses",
+    title: "3iik Studio | Web Services & Digital Solutions",
+    description: "Modern Web Solutions for Algerian Businesses",
     type: "website",
     locale: "fr_DZ",
     siteName: "3iik Studio",
@@ -58,8 +59,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "3iik Studio | Web Design & Development",
-    description: "Modern Websites for Algerian Businesses",
+    title: "3iik Studio | Web Services & Digital Solutions",
+    description: "Modern Web Solutions for Algerian Businesses",
     images: ["/og-image.png"],
   },
   robots: {

@@ -1,9 +1,9 @@
 {
   "site": {
-    "title": "3iik Studio | Développement & Conception Web — Sites Web Modernes pour les Entreprises Algériennes",
-    "description": "Création de sites web professionnels pour les entreprises algériennes. Des sites rapides, modernes et adaptés aux mobiles qui inspirent confiance et attirent des clients.",
-    "ogTitle": "3iik Studio | Développement & Conception Web",
-    "ogDescription": "Des sites web modernes pour les entreprises algériennes. Services professionnels de conception et développement web."
+    "title": "3iik Studio | Services & Solutions Web — Solutions Web Modernes pour les Entreprises Algériennes",
+    "description": "Services web professionnels pour les entreprises algériennes. Des solutions rapides, modernes et adaptées aux mobiles qui inspirent confiance et attirent des clients.",
+    "ogTitle": "3iik Studio | Services & Solutions Web",
+    "ogDescription": "Des solutions web modernes pour les entreprises algériennes. Services web professionnels."
   },
   "nav": {
     "services": "Services",
@@ -17,16 +17,16 @@
     "subtitle": "Sites Web · Apps · Produits Digitaux"
   },
   "hero": {
-    "badge": "Développement & Conception Web — Algérie",
-    "title": "Des Sites Web Modernes Qui Aident les Entreprises à",
+    "badge": "Services & Solutions Web — Algérie",
+    "title": "Des Solutions Web Modernes Qui Aident les Entreprises à",
     "titleAccent": ["Grandir", "Vendre", "Attirer des Clients", "Se Développer", "Réussir", "Convertir"],
-    "subtitle": "Des sites rapides, professionnels et adaptés aux mobiles, conçus pour inspirer confiance et attirer des clients. Obtenez un site web qui travaille aussi dur que vous.",
+    "subtitle": "Des solutions rapides, professionnelles et adaptées aux mobiles, conçues pour inspirer confiance et attirer des clients. Obtenez un site web qui travaille aussi dur que vous.",
     "viewProjects": "Voir les Projets",
     "contactMessenger": "Contacter sur Instagram"
   },
   "services": {
     "label": "Ce que je propose",
-    "heading": "Services de Développement Web",
+    "heading": "Services Web",
     "description": "Des sites vitrines aux solutions avancées basées sur l'IA, je construis ce dont votre entreprise a besoin pour se développer en ligne.",
     "items": [
       {
@@ -63,7 +63,7 @@
     "reasons": [
       {
         "title": "Livraison Rapide",
-        "description": "Votre site web opérationnel en quelques jours, pas en mois. Je respecte votre temps et vos délais."
+        "description": "Votre projet opérationnel en quelques jours, pas en mois. Je respecte votre temps et vos délais."
       },
       {
         "title": "Design Mobile d'Abord",
@@ -83,7 +83,7 @@
       },
       {
         "title": "Prix Abordables",
-        "description": "Des sites de qualité à des prix justes pour les entreprises algériennes. Sans frais cachés ni surprises."
+        "description": "Des solutions de qualité à des prix justes pour les entreprises algériennes. Sans frais cachés ni surprises."
       },
       {
         "title": "Support Fiable",
@@ -94,7 +94,7 @@
   "portfolio": {
     "label": "Mon Travail",
     "heading": "Projets Réalisés",
-    "description": "Des sites web que j'ai créés pour des entreprises de différents secteurs.",
+    "description": "Des projets web que j'ai créés pour des entreprises de différents secteurs.",
     "projects": [
       {
         "title": "Le Jardin Restaurant",
@@ -134,7 +134,7 @@
       {
         "number": "01",
         "title": "Découverte",
-        "description": "J'apprends à connaître votre entreprise, vos objectifs, votre public cible et ce que vous voulez que votre site accomplisse."
+        "description": "J'apprends à connaître votre entreprise, vos objectifs, votre public cible et ce que vous voulez que votre projet accomplisse."
       },
       {
         "number": "02",
@@ -144,7 +144,7 @@
       {
         "number": "03",
         "title": "Développement",
-        "description": "Je construis votre site avec les technologies modernes. Le site est responsive, rapide et entièrement fonctionnel."
+        "description": "Je construis votre projet avec les technologies modernes. Le site est responsive, rapide et entièrement fonctionnel."
       },
       {
         "number": "04",
@@ -161,8 +161,8 @@
   "pricing": {
     "label": "Tarifs",
     "heading": "Tarification Transparente",
-    "description": "Des sites de qualité à des prix justes. Sans frais cachés, sans surprises.",
-    "webTab": "Développement Web",
+    "description": "Des solutions de qualité à des prix justes. Sans frais cachés, sans surprises.",
+    "webTab": "Services Web",
     "appTab": "Développement App",
     "popular": "Le Plus Populaire",
     "startingFrom": "À partir de",
@@ -206,7 +206,7 @@
   "testimonials": {
     "label": "Projets Exemples",
     "heading": "Travaux Réalisés",
-    "description": "Projets de démonstration illustrant la qualité et la variété des sites que je construis. Remplaçables par des projets clients réels lorsqu'ils seront disponibles.",
+    "description": "Projets de démonstration illustrant la qualité et la variété des projets que je réalise. Remplaçables par des projets clients réels lorsqu'ils seront disponibles.",
     "items": [
       {
         "title": "Projet Démo — Site Restaurant",
@@ -254,14 +254,14 @@
   },
   "cta": {
     "heading": "Prêt à Développer Votre Entreprise en Ligne ?",
-    "description": "Obtenez un site web moderne et professionnel qui aide vos clients à découvrir votre entreprise, à faire confiance à votre marque et à vous contacter facilement.",
+    "description": "Obtenez une solution web moderne et professionnelle qui aide vos clients à découvrir votre entreprise, à faire confiance à votre marque et à vous contacter facilement.",
     "chatMessenger": "Contacter sur Instagram",
     "freeConsultation": "Demander un Devis Gratuit"
   },
   "contact": {
     "label": "Me Contacter",
-    "heading": "Construisons Votre Prochain Site Web",
-    "description": "Prêt à lancer votre entreprise en ligne ? Contactez-moi et créons ensemble quelque chose de formidable.",
+    "heading": "Construisons Votre Prochaine Solution Web",
+    "description": "Prêt à passer à l'étape suivante ? Contactez-moi et créons ensemble quelque chose de formidable.",
     "trustMessage": "La plupart des projets commencent par un message rapide sur Instagram.",
     "chatMessenger": "Contacter sur Instagram",
     "orDivider": "ou envoyez un message",
@@ -274,7 +274,7 @@
     "formSubmit": "Envoyer le Message"
   },
   "footer": {
-    "description": "Des sites web modernes pour les entreprises algériennes. J'aide les entreprises à obtenir des sites rapides, modernes et adaptés aux mobiles qui attirent des clients et inspirent confiance.",
+    "description": "Des solutions web modernes pour les entreprises algériennes. J'aide les entreprises à obtenir des solutions rapides, modernes et adaptées aux mobiles qui attirent des clients et inspirent confiance.",
     "quickLinks": "Liens Rapides",
     "connect": "Réseaux",
     "copyright": "Tous droits réservés."

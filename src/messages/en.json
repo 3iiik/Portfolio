@@ -1,9 +1,9 @@
 {
   "site": {
-    "title": "3iik Studio | Web Design & Development — Modern Websites for Algerian Businesses",
-    "description": "Professional web design and development for Algerian businesses. Fast, modern, mobile-friendly websites that build trust and attract customers.",
-    "ogTitle": "3iik Studio | Web Design & Development",
-    "ogDescription": "Modern websites for Algerian businesses. Professional web design and development services."
+    "title": "3iik Studio | Web Services & Digital Solutions — Modern Web Solutions for Algerian Businesses",
+    "description": "Professional web services and digital solutions for Algerian businesses. Fast, modern, mobile-friendly websites that build trust and attract customers.",
+    "ogTitle": "3iik Studio | Web Services & Digital Solutions",
+    "ogDescription": "Modern web solutions for Algerian businesses. Professional web services and digital solutions."
   },
   "nav": {
     "services": "Services",
@@ -17,16 +17,16 @@
     "subtitle": "Websites · Apps · Digital Products"
   },
   "hero": {
-    "badge": "Web Design & Development — Algeria",
-    "title": "Modern Websites That Help Businesses",
+    "badge": "Web Services & Digital Solutions — Algeria",
+    "title": "Modern Web Solutions That Help Businesses",
     "titleAccent": ["Grow", "Sell", "Convert", "Scale", "Succeed", "Lead"],
-    "subtitle": "Fast, professional, mobile-friendly websites designed to build trust and attract customers. Get a website that works as hard as you do.",
+    "subtitle": "Fast, professional, mobile-friendly web solutions designed to build trust and attract customers. Get a website that works as hard as you do.",
     "viewProjects": "View Projects",
     "contactMessenger": "Contact on Instagram"
   },
   "services": {
     "label": "What I Offer",
-    "heading": "Web Development Services",
+    "heading": "Web Services",
     "description": "From simple business websites to advanced AI-powered solutions, I build what your business needs to grow online.",
     "items": [
       {
@@ -63,7 +63,7 @@
     "reasons": [
       {
         "title": "Fast Delivery",
-        "description": "Get your website up and running in days, not months. I respect your time and deadlines."
+        "description": "Get your project up and running in days, not months. I respect your time and deadlines."
       },
       {
         "title": "Mobile-First Design",
@@ -83,7 +83,7 @@
       },
       {
         "title": "Affordable Pricing",
-        "description": "Quality websites at fair prices tailored for Algerian businesses. No hidden fees or surprises."
+        "description": "Quality solutions at fair prices tailored for Algerian businesses. No hidden fees or surprises."
       },
       {
         "title": "Reliable Support",
@@ -94,7 +94,7 @@
   "portfolio": {
     "label": "My Work",
     "heading": "Featured Projects",
-    "description": "Real websites I have built for businesses across different industries.",
+    "description": "Real projects I have built for businesses across different industries.",
     "projects": [
       {
         "title": "Le Jardin Restaurant",
@@ -134,7 +134,7 @@
       {
         "number": "01",
         "title": "Discovery",
-        "description": "I learn about your business, goals, target audience, and what you want your website to achieve."
+        "description": "I learn about your business, goals, target audience, and what you want your project to achieve."
       },
       {
         "number": "02",
@@ -144,7 +144,7 @@
       {
         "number": "03",
         "title": "Development",
-        "description": "I build your website using modern technologies. The site is responsive, fast, and fully functional."
+        "description": "I build your project using modern technologies. The site is responsive, fast, and fully functional."
       },
       {
         "number": "04",
@@ -161,8 +161,8 @@
   "pricing": {
     "label": "Pricing",
     "heading": "Transparent Pricing",
-    "description": "Quality websites at fair prices. No hidden fees, no surprises.",
-    "webTab": "Web Development",
+    "description": "Quality solutions at fair prices. No hidden fees, no surprises.",
+    "webTab": "Web Services",
     "appTab": "App Development",
     "popular": "Most Popular",
     "startingFrom": "Starting from",
@@ -206,7 +206,7 @@
   "testimonials": {
     "label": "Sample Projects",
     "heading": "Featured Work",
-    "description": "Demo projects showcasing the quality and range of websites I build. Replaceable with actual client work as it becomes available.",
+    "description": "Demo projects showcasing the quality and range of projects I build. Replaceable with actual client work as it becomes available.",
     "items": [
       {
         "title": "Demo Project — Restaurant Website",
@@ -254,14 +254,14 @@
   },
   "cta": {
     "heading": "Ready to Grow Your Business Online?",
-    "description": "Get a modern, professional website that helps customers discover your business, trust your brand, and contact you easily.",
+    "description": "Get a modern, professional web solution that helps customers discover your business, trust your brand, and contact you easily.",
     "chatMessenger": "Contact on Instagram",
     "freeConsultation": "Request a Free Consultation"
   },
   "contact": {
     "label": "Get in Touch",
-    "heading": "Let's Build Your Next Website",
-    "description": "Ready to take your business online? Get in touch and let's create something great together.",
+    "heading": "Let's Build Your Next Web Solution",
+    "description": "Ready to take your business to the next level? Get in touch and let's create something great together.",
     "trustMessage": "Most projects start with a quick message on Instagram.",
     "chatMessenger": "Contact on Instagram",
     "orDivider": "or send a message",
@@ -274,7 +274,7 @@
     "formSubmit": "Send Message"
   },
   "footer": {
-    "description": "Modern Websites for Algerian Businesses. I help businesses get fast, modern, and mobile-friendly websites that attract customers and build trust.",
+    "description": "Modern Web Solutions for Algerian Businesses. I help businesses get fast, modern, and mobile-friendly web solutions that attract customers and build trust.",
     "quickLinks": "Quick Links",
     "connect": "Connect",
     "copyright": "All rights reserved."
