@@ -164,23 +164,28 @@
     "description": "Quality solutions at fair prices. No hidden fees, no surprises.",
     "webTab": "Web Services",
     "appTab": "App Development",
+    "qrMenuTab": "Menu QR",
     "popular": "Most Popular",
+    "bestValue": "Best Value",
     "startingFrom": "Starting from",
     "getStarted": "Get Started",
     "disclaimer": "Final pricing depends on project requirements, complexity, and requested features. Contact me for a free, personalized quote.",
     "plans": [
       {
         "name": "Starter",
+        "price": "12 000",
         "description": "Perfect for small businesses that need a simple online presence.",
         "features": ["Up to 5 pages", "Mobile responsive", "Contact form", "Basic SEO", "Fast delivery"]
       },
       {
         "name": "Business",
+        "price": "25 000",
         "description": "Ideal for growing businesses that want a professional edge.",
         "features": ["Custom design", "Up to 10 pages", "SEO optimization", "Booking/contact system", "Performance optimization"]
       },
       {
         "name": "Premium",
+        "price": "45 000",
         "description": "For businesses with unique requirements and ambitious goals.",
         "features": ["Fully custom solution", "Admin dashboard", "Advanced integrations", "Custom functionality", "Priority support"]
       }
@@ -188,18 +193,41 @@
     "appPlans": [
       {
         "name": "Starter",
+        "price": "12 000",
         "description": "Perfect for a simple app with essential features.",
         "features": ["Up to 5 screens", "Responsive design", "Contact form", "Basic SEO", "Fast delivery"]
       },
       {
         "name": "Business",
+        "price": "25 000",
         "description": "Ideal for apps with advanced features and a polished UX.",
         "features": ["Custom design", "Up to 10 screens", "Performance optimization", "Push notifications", "User authentication"]
       },
       {
         "name": "Premium",
+        "price": "45 000",
         "description": "For complex apps with unique needs and advanced integrations.",
         "features": ["Fully custom solution", "Admin dashboard", "Advanced API integrations", "Custom features", "Priority support"]
+      }
+    ],
+    "qrPlans": [
+      {
+        "name": "QR Menu Starter",
+        "price": "25 000",
+        "description": "Give your customers an interactive way to explore your menu before ordering.",
+        "features": ["Printed premium QR code stickers", "QR code linked to your digital menu", "Ready to place on tables", "Fast setup"]
+      },
+      {
+        "name": "3D Menu",
+        "price": "30 000",
+        "description": "Customers can view dishes in 3D by scanning a QR code — no app needed.",
+        "features": ["Digital menu website", "QR code", "View dishes in 3D", "Mobile friendly", "Easy menu updates"]
+      },
+      {
+        "name": "Complete Restaurant Experience",
+        "price": "35 000",
+        "description": "The full package — website, digital menu, QR codes, and 3D meal viewing.",
+        "features": ["Complete restaurant website", "Digital menu", "QR code system", "3D meal viewer", "Printed premium QR stickers", "Modern responsive design", "Contact & location", "SEO ready"]
       }
     ]
   },
