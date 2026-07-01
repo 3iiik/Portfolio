@@ -67,6 +67,11 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${cairo.variable} antialiased`}
     >
       <body className="min-h-screen bg-background text-foreground">
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var l=location.pathname.match(/^\/(fr|en|ar)/);if(l){document.documentElement.lang=l[1];if(l[1]==='ar')document.documentElement.dir='rtl'}})()`,
+          }}
+        />
         {children}
       </body>
     </html>

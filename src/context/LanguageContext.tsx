@@ -3,7 +3,6 @@
 import {
   createContext,
   useContext,
-  useEffect,
   useCallback,
   type ReactNode,
 } from "react";
@@ -59,11 +58,6 @@ export function LanguageProvider({
     },
     [pathname, router],
   );
-
-  useEffect(() => {
-    document.documentElement.dir = isRtl(locale) ? "rtl" : "ltr";
-    document.documentElement.lang = locale;
-  }, [locale]);
 
   const t = useCallback(
     (path: string): string => {
