@@ -20,7 +20,7 @@ html {
   scroll-behavior: smooth;
 }
 
-html[lang="ar"] {
+html.locale-ar {
   font-family: var(--font-arabic), sans-serif;
 }
 
@@ -29,29 +29,29 @@ body {
   color: var(--color-foreground);
 }
 
-[lang="ar"] h1,
-[lang="ar"] h2,
-[lang="ar"] h3 {
+.locale-ar h1,
+.locale-ar h2,
+.locale-ar h3 {
   font-weight: 800;
   line-height: 1.25;
 }
 
-[lang="ar"] h4,
-[lang="ar"] h5,
-[lang="ar"] h6 {
+.locale-ar h4,
+.locale-ar h5,
+.locale-ar h6 {
   font-weight: 700;
   line-height: 1.3;
 }
 
-[lang="ar"] p,
-[lang="ar"] li {
+.locale-ar p,
+.locale-ar li {
   font-weight: 500;
   line-height: 1.8;
 }
 
-[lang="ar"] nav a,
-[lang="ar"] button,
-[lang="ar"] .btn {
+.locale-ar nav a,
+.locale-ar button,
+.locale-ar .btn {
   font-weight: 700;
 }
 

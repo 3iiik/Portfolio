@@ -69,7 +69,7 @@ export default function RootLayout({
       <body className="min-h-screen bg-background text-foreground">
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){var l=location.pathname.match(/^\/(fr|en|ar)/);if(l){document.documentElement.lang=l[1];if(l[1]==='ar')document.documentElement.dir='rtl'}})()`,
+            __html: `(function(){var l=location.pathname.match(/^\/(fr|en|ar)/);if(l){document.documentElement.lang=l[1];if(l[1]==='ar'){document.documentElement.dir='rtl';document.documentElement.classList.add('locale-ar')}else{document.documentElement.dir='ltr';document.documentElement.classList.remove('locale-ar')}}})()`,
           }}
         />
         {children}
