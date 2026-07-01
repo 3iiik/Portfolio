@@ -5,14 +5,9 @@ import { useLanguage } from "@/context/LanguageContext";
 
 export default function Pricing() {
   const { t, tm } = useLanguage();
-  const [activeTab, setActiveTab] = useState<"web" | "app" | "qrMenu">("web");
+  const [activeTab, setActiveTab] = useState<"web" | "qrMenu">("web");
 
-  const plansPath =
-    activeTab === "web"
-      ? "pricing.plans"
-      : activeTab === "app"
-        ? "pricing.appPlans"
-        : "pricing.qrPlans";
+  const plansPath = activeTab === "web" ? "pricing.plans" : "pricing.qrPlans";
   const plans = (tm(plansPath) as {
     name: string;
     price?: string;
@@ -46,16 +41,6 @@ export default function Pricing() {
               }`}
             >
               {t("pricing.webTab")}
-            </button>
-            <button
-              onClick={() => setActiveTab("app")}
-              className={`rounded-lg px-5 py-2.5 text-sm font-semibold transition-all ${
-                activeTab === "app"
-                  ? "bg-primary text-white shadow-sm"
-                  : "text-muted hover:text-foreground"
-              }`}
-            >
-              {t("pricing.appTab")}
             </button>
             <button
               onClick={() => setActiveTab("qrMenu")}
