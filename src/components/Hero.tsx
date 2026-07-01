@@ -4,8 +4,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import Typewriter from "@/components/ui/typewriter";
 
 export default function Hero() {
-  const { t, tm, locale } = useLanguage();
-  const isRtl = locale === "ar";
+  const { t, tm, dir } = useLanguage();
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-surface via-white to-primary-light pt-32 pb-20 sm:pt-40 sm:pb-28">
@@ -24,10 +23,10 @@ export default function Hero() {
               text={tm("hero.titleAccent") as string[]}
               speed={70}
               deleteSpeed={40}
-              waitTime={1800}
+              waitTime={1500}
               cursorChar="|"
               className="text-primary"
-              fadeMode={locale === "ar"}
+              dir={dir}
             />
           </h1>
 
@@ -62,8 +61,8 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className={`absolute -top-40 ${isRtl ? "-left-40" : "-right-40"} h-80 w-80 rounded-full bg-primary/5 blur-3xl`} aria-hidden="true" />
-      <div className={`absolute -bottom-40 ${isRtl ? "-right-40" : "-left-40"} h-80 w-80 rounded-full bg-primary/5 blur-3xl`} aria-hidden="true" />
+      <div className={`absolute -top-40 ${dir === "rtl" ? "-left-40" : "-right-40"} h-80 w-80 rounded-full bg-primary/5 blur-3xl`} aria-hidden="true" />
+      <div className={`absolute -bottom-40 ${dir === "rtl" ? "-right-40" : "-left-40"} h-80 w-80 rounded-full bg-primary/5 blur-3xl`} aria-hidden="true" />
     </section>
   );
 }

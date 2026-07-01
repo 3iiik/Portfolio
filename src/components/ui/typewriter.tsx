@@ -1,7 +1,7 @@
 "use client"
 
 import { ElementType, useEffect, useState } from "react"
-import { motion, AnimatePresence, Variants } from "motion/react"
+import { motion, Variants } from "motion/react"
 
 import { cn } from "@/lib/utils"
 
@@ -22,7 +22,7 @@ interface TypewriterProps {
     animate: Variants["animate"]
   }
   cursorClassName?: string
-  fadeMode?: boolean
+  dir?: "ltr" | "rtl"
 }
 
 const Typewriter = ({
@@ -37,8 +37,8 @@ const Typewriter = ({
   showCursor = true,
   hideCursorOnType = false,
   cursorChar = "|",
-  cursorClassName = "ml-1",
-  fadeMode = false,
+  cursorClassName = "ms-1",
+  dir = "ltr",
   cursorAnimationVariants = {
     initial: { opacity: 0 },
     animate: {
@@ -59,28 +59,9 @@ const Typewriter = ({
   const [currentTextIndex, setCurrentTextIndex] = useState(0)
 
   const texts = Array.isArray(text) ? text : [text]
-
-  const [fadeStarted, setFadeStarted] = useState(false)
-
-  useEffect(() => {
-    if (!fadeMode) return;
-
-    let timeout: NodeJS.Timeout;
-
-    if (!fadeStarted) {
-      timeout = setTimeout(() => setFadeStarted(true), initialDelay);
-    } else {
-      timeout = setTimeout(() => {
-        setCurrentTextIndex((prev) => (prev + 1) % texts.length);
-      }, waitTime);
-    }
-
-    return () => clearTimeout(timeout);
-  }, [fadeMode, fadeStarted, currentTextIndex, texts.length, waitTime, initialDelay]);
+  const longestText = texts.reduce((a, b) => a.length > b.length ? a : b, "")
 
   useEffect(() => {
-    if (fadeMode) return;
-
     let timeout: NodeJS.Timeout
 
     const currentText = texts[currentTextIndex]
@@ -131,44 +112,32 @@ const Typewriter = ({
     texts,
     currentTextIndex,
     loop,
-    fadeMode,
   ])
 
   return (
-    <Tag className={cn("inline whitespace-pre-wrap tracking-tight", className)} {...props}>
-      {!fadeMode ? (
-        <span>{displayText}</span>
-      ) : (
-        <span className="inline-block relative">
-          <AnimatePresence mode="wait">
-            <motion.span
-              key={currentTextIndex}
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.2 }}
-            >
-              {fadeStarted ? texts[currentTextIndex] : ""}
-            </motion.span>
-          </AnimatePresence>
-        </span>
-      )}
-      {showCursor && (
-        <motion.span
-          variants={cursorAnimationVariants}
-          className={cn(
-            cursorClassName,
-            hideCursorOnType &&
-              (currentIndex < texts[currentTextIndex].length || isDeleting)
-              ? "hidden"
-              : ""
-          )}
-          initial="initial"
-          animate="animate"
-        >
-          {cursorChar}
-        </motion.span>
-      )}
+    <Tag dir={dir} className={cn("inline-grid tracking-tight", className)} {...props}>
+      <span aria-hidden="true" className="invisible whitespace-pre-wrap col-start-1 row-start-1">
+        {longestText}
+      </span>
+      <span className="whitespace-pre-wrap col-start-1 row-start-1">
+        {displayText}
+        {showCursor && (
+          <motion.span
+            variants={cursorAnimationVariants}
+            className={cn(
+              cursorClassName,
+              hideCursorOnType &&
+                (currentIndex < texts[currentTextIndex].length || isDeleting)
+                ? "hidden"
+                : ""
+            )}
+            initial="initial"
+            animate="animate"
+          >
+            {cursorChar}
+          </motion.span>
+        )}
+      </span>
     </Tag>
   )
 }

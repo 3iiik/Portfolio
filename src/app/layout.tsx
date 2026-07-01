@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 const tajawal = Tajawal({
-  variable: "--font-arabic",
+  variable: "--font-tajawal",
   subsets: ["arabic"],
   weight: ["400", "500", "700", "800"],
 });
