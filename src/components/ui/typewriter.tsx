@@ -59,7 +59,6 @@ const Typewriter = ({
   const [currentTextIndex, setCurrentTextIndex] = useState(0)
 
   const texts = Array.isArray(text) ? text : [text]
-  const longestText = texts.reduce((a, b) => a.length > b.length ? a : b, "")
 
   useEffect(() => {
     let timeout: NodeJS.Timeout
@@ -115,29 +114,24 @@ const Typewriter = ({
   ])
 
   return (
-    <Tag dir={dir} className={cn("inline-grid tracking-tight", className)} {...props}>
-      <span aria-hidden="true" className="invisible whitespace-pre-wrap col-start-1 row-start-1">
-        {longestText}
-      </span>
-      <span className="whitespace-pre-wrap col-start-1 row-start-1">
-        {displayText}
-        {showCursor && (
-          <motion.span
-            variants={cursorAnimationVariants}
-            className={cn(
-              cursorClassName,
-              hideCursorOnType &&
-                (currentIndex < texts[currentTextIndex].length || isDeleting)
-                ? "hidden"
-                : ""
-            )}
-            initial="initial"
-            animate="animate"
-          >
-            {cursorChar}
-          </motion.span>
-        )}
-      </span>
+    <Tag dir={dir} className={cn("tracking-tight", className)} {...props}>
+      <span>{displayText}</span>
+      {showCursor && (
+        <motion.span
+          variants={cursorAnimationVariants}
+          className={cn(
+            cursorClassName,
+            hideCursorOnType &&
+              (currentIndex < texts[currentTextIndex].length || isDeleting)
+              ? "hidden"
+              : ""
+          )}
+          initial="initial"
+          animate="animate"
+        >
+          {cursorChar}
+        </motion.span>
+      )}
     </Tag>
   )
 }
