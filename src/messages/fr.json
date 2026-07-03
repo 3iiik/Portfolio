@@ -10,8 +10,7 @@
     "projects": "Projets",
     "pricing": "Tarifs",
     "faq": "FAQ",
-    "contact": "Contact",
-    "contactMessenger": "Contacter sur Instagram"
+    "contact": "Contact"
   },
   "header": {
     "subtitle": "Sites Web · Apps · Produits Digitaux"
@@ -22,7 +21,7 @@
     "titleAccent": ["Grandir", "Vendre", "Attirer des Clients", "Se Développer", "Réussir", "Convertir"],
     "subtitle": "Des solutions rapides, professionnelles et adaptées aux mobiles, conçues pour inspirer confiance et attirer des clients. Obtenez un site web qui travaille aussi dur que vous.",
     "viewProjects": "Voir les Projets",
-    "contactMessenger": "Contacter sur Instagram"
+    "viewServices": "Voir les Services"
   },
   "services": {
     "label": "Ce que je propose",
@@ -281,17 +280,15 @@
     ]
   },
   "cta": {
-    "heading": "Prêt à Développer Votre Entreprise en Ligne ?",
-    "description": "Obtenez une solution web moderne et professionnelle qui aide vos clients à découvrir votre entreprise, à faire confiance à votre marque et à vous contacter facilement.",
-    "chatMessenger": "Contacter sur Instagram",
-    "freeConsultation": "Demander un Devis Gratuit"
+    "heading": "Intéressé par une collaboration ?",
+    "description": "Parcourez mes projets, services et tarifs pour découvrir ce que je peux construire pour votre entreprise.",
+    "viewProjects": "Voir les Projets",
+    "viewPricing": "Voir les Tarifs"
   },
   "contact": {
     "label": "Me Contacter",
     "heading": "Construisons Votre Prochaine Solution Web",
     "description": "Prêt à passer à l'étape suivante ? Contactez-moi et créons ensemble quelque chose de formidable.",
-    "trustMessage": "La plupart des projets commencent par un message rapide sur Instagram.",
-    "chatMessenger": "Contacter sur Instagram",
     "orDivider": "ou envoyez un message",
     "formName": "Nom Complet",
     "formNamePlaceholder": "Votre nom",

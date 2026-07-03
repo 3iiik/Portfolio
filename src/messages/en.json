@@ -10,8 +10,7 @@
     "projects": "Projects",
     "pricing": "Pricing",
     "faq": "FAQ",
-    "contact": "Contact",
-    "contactMessenger": "Contact on Instagram"
+    "contact": "Contact"
   },
   "header": {
     "subtitle": "Websites · Apps · Digital Products"
@@ -22,7 +21,7 @@
     "titleAccent": ["Grow", "Sell", "Convert", "Scale", "Succeed", "Lead"],
     "subtitle": "Fast, professional, mobile-friendly web solutions designed to build trust and attract customers. Get a website that works as hard as you do.",
     "viewProjects": "View Projects",
-    "contactMessenger": "Contact on Instagram"
+    "viewServices": "View Services"
   },
   "services": {
     "label": "What I Offer",
@@ -281,17 +280,15 @@
     ]
   },
   "cta": {
-    "heading": "Ready to Grow Your Business Online?",
-    "description": "Get a modern, professional web solution that helps customers discover your business, trust your brand, and contact you easily.",
-    "chatMessenger": "Contact on Instagram",
-    "freeConsultation": "Request a Free Consultation"
+    "heading": "Interested in working together?",
+    "description": "Browse my projects, services and pricing to see what I can build for your business.",
+    "viewProjects": "View Projects",
+    "viewPricing": "View Pricing"
   },
   "contact": {
     "label": "Get in Touch",
     "heading": "Let's Build Your Next Web Solution",
     "description": "Ready to take your business to the next level? Get in touch and let's create something great together.",
-    "trustMessage": "Most projects start with a quick message on Instagram.",
-    "chatMessenger": "Contact on Instagram",
     "orDivider": "or send a message",
     "formName": "Full Name",
     "formNamePlaceholder": "Your name",

@@ -51,26 +51,6 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li>
                 <a
-                  href="https://facebook.com/3iik.dev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted transition-colors hover:text-foreground"
-                >
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://instagram.com/3iik.dev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted transition-colors hover:text-foreground"
-                >
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a
                   href="mailto:3iikStudio@proton.me"
                   className="text-sm text-muted transition-colors hover:text-foreground"
                 >

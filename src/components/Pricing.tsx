@@ -130,9 +130,7 @@ export default function Pricing() {
                 </ul>
 
                 <a
-                  href="https://instagram.com/3iik.dev"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#contact"
                   className={`mt-auto inline-flex h-12 w-full items-center justify-center rounded-full text-sm font-semibold transition-all active:scale-95 ${
                     isFeatured
                       ? "bg-white text-primary hover:bg-white/90"
