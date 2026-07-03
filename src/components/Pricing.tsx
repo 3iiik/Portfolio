@@ -99,11 +99,11 @@ export default function Pricing() {
                   <span className={`text-sm font-medium ${isFeatured ? "text-white/70" : "text-muted"}`}>
                     {t("pricing.startingFrom")}
                   </span>
-                  <div className="mt-1">
-                    <span className={`text-4xl font-bold ${isFeatured ? "text-white" : "text-foreground"}`}>
+                  <div className="mt-1 flex items-baseline gap-1" dir="ltr">
+                    <span className={`text-4xl font-bold tabular-nums whitespace-nowrap ${isFeatured ? "text-white" : "text-foreground"}`}>
                       {plan.price ?? "—"}
                     </span>
-                    <span className={`ml-1 text-lg ${isFeatured ? "text-white/80" : "text-muted"}`}>
+                    <span className={`text-lg whitespace-nowrap ${isFeatured ? "text-white/80" : "text-muted"}`}>
                       DZD
                     </span>
                   </div>
