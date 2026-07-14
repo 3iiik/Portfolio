@@ -114,6 +114,11 @@
         "title": "Forca",
         "category": "Application Bureau",
         "description": "Une application de productivité open-source pour Windows qui bloque automatiquement les sites distrayants grâce à des zones de focus et une extension navigateur."
+      },
+      {
+        "title": "Quelle Wilaya Algérienne Vous Correspond ?",
+        "category": "Expérience Web Interactive",
+        "description": "Un quiz interactif et amusant qui associe votre personnalité à l'une des 58 wilayas d'Algérie, construit avec Next.js et Framer Motion."
       }
     ],
     "liveDemo": "Démo en Direct",

@@ -114,6 +114,11 @@
         "title": "Forca",
         "category": "Desktop App",
         "description": "An open-source Windows productivity app that automatically blocks distracting websites using Focus Zones and a browser extension."
+      },
+      {
+        "title": "Which Algerian Wilaya Fits You?",
+        "category": "Interactive Web Experience",
+        "description": "A fun, interactive quiz that matches your personality to one of Algeria's 58 wilayas, built with Next.js and Framer Motion."
       }
     ],
     "liveDemo": "Live Demo",

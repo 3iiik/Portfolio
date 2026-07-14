@@ -32,6 +32,13 @@ const projectsData = [
     githubUrl: "https://github.com/3iiik/Forca",
     tags: ["Electron", "TypeScript", "WebSocket"],
   },
+  {
+    slug: "wilaya",
+    image: "/images/projects/wilaya.jpg",
+    demoUrl: "https://wilaya.vercel.app",
+    githubUrl: "https://github.com/3iiik/algeria",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+  },
 ];
 
 export default function Portfolio() {
