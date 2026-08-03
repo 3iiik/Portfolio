@@ -54,7 +54,6 @@ export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
   const validLocale = locale === "en" || locale === "ar" ? locale : "fr";
   const messages = allMessages[validLocale];
-  const dir = validLocale === "ar" ? "rtl" : "ltr";
 
   return (
     <LanguageProvider locale={validLocale} messages={messages}>

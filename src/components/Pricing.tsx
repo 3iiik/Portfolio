@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
+import { Reveal } from "@/components/ui/reveal";
 
 export default function Pricing() {
   const { t, tm } = useLanguage();
@@ -16,112 +17,76 @@ export default function Pricing() {
   }[]);
 
   return (
-    <section id="pricing" className="py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <span className="text-xs font-semibold tracking-widest text-primary uppercase">
-            {t("pricing.label")}
-          </span>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            {t("pricing.heading")}
-          </h2>
-          <p className="mt-4 text-lg text-muted">
+    <section id="pricing" className="relative border-t border-border py-24 sm:py-32">
+      <div className="mx-auto max-w-6xl px-5 sm:px-8 lg:px-10">
+        <Reveal className="flex items-end justify-between gap-6 border-b border-border pb-10">
+          <div>
+            <span className="text-xs uppercase tracking-[0.3em] text-muted">
+              {t("pricing.label")}
+            </span>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
+              {t("pricing.heading")}
+            </h2>
+          </div>
+          <p className="hidden max-w-xs text-sm leading-relaxed text-muted md:block">
             {t("pricing.description")}
           </p>
-        </div>
+        </Reveal>
 
-        <div className="mt-12 flex justify-center">
-          <div className="inline-flex rounded-xl border border-border bg-surface p-1">
+        <Reveal delay={0.06}>
+          <div className="mt-12 inline-flex border border-border">
             <button
+              type="button"
               onClick={() => setActiveTab("web")}
-              className={`rounded-lg px-5 py-2.5 text-sm font-semibold transition-all ${
-                activeTab === "web"
-                  ? "bg-primary text-white shadow-sm"
-                  : "text-muted hover:text-foreground"
+              className={`px-6 py-3 text-sm transition-colors ${
+                activeTab === "web" ? "bg-foreground text-background" : "text-muted hover:text-foreground"
               }`}
             >
               {t("pricing.webTab")}
             </button>
             <button
+              type="button"
               onClick={() => setActiveTab("qrMenu")}
-              className={`rounded-lg px-5 py-2.5 text-sm font-semibold transition-all ${
-                activeTab === "qrMenu"
-                  ? "bg-primary text-white shadow-sm"
-                  : "text-muted hover:text-foreground"
+              className={`px-6 py-3 text-sm transition-colors ${
+                activeTab === "qrMenu" ? "bg-foreground text-background" : "text-muted hover:text-foreground"
               }`}
             >
               {t("pricing.qrMenuTab")}
             </button>
           </div>
-        </div>
+        </Reveal>
 
-        <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-px border border-border bg-border md:grid-cols-3">
           {plans.map((plan, index) => {
             const isFeatured = index === 1;
-            const isMostPopular = activeTab !== "qrMenu" && index === 1;
-            const isBestValue = activeTab === "qrMenu" && index === 1;
-
-            const orderClass =
-              index === 0
-                ? "order-2 lg:order-1"
-                : index === 1
-                  ? "order-1 lg:order-2"
-                  : "order-3";
-
             return (
-              <div
-                key={plan.name}
-                className={`relative flex h-full flex-col rounded-2xl border p-8 ${orderClass} ${
-                  isFeatured
-                    ? "border-primary bg-primary text-white shadow-xl shadow-primary/20 z-10 lg:scale-[1.05]"
-                    : "border-border bg-card"
-                }`}
-              >
-                {isMostPopular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-white px-4 py-1 text-xs font-semibold text-primary">
-                    {t("pricing.popular")}
-                  </div>
-                )}
-                {isBestValue && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-white px-4 py-1 text-xs font-semibold text-primary">
-                    {t("pricing.bestValue")}
-                  </div>
-                )}
+              <Reveal key={plan.name} delay={index * 0.06} className="flex flex-col bg-background p-9">
+                <div className="flex items-center justify-between gap-4">
+                  <h3 className="text-lg font-medium text-foreground">{plan.name}</h3>
+                  {isFeatured && (
+                    <span className="border border-foreground px-2 py-0.5 text-[10px] uppercase tracking-[0.2em] text-foreground">
+                      {t("pricing.popular")}
+                    </span>
+                  )}
+                </div>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{plan.description}</p>
 
-                <h3 className={`text-xl font-semibold ${isFeatured ? "text-white" : "text-foreground"}`}>
-                  {plan.name}
-                </h3>
-                <p className={`mt-1 text-sm ${isFeatured ? "text-white/80" : "text-muted"}`}>
-                  {plan.description}
-                </p>
-
-                <div className="mt-6">
-                  <span className={`text-sm font-medium ${isFeatured ? "text-white/70" : "text-muted"}`}>
+                <div className="mt-8">
+                  <span className="text-xs uppercase tracking-[0.2em] text-muted">
                     {t("pricing.startingFrom")}
                   </span>
-                  <div className="mt-1 flex items-baseline gap-1" dir="ltr">
-                    <span className={`text-4xl font-bold tabular-nums whitespace-nowrap ${isFeatured ? "text-white" : "text-foreground"}`}>
+                  <div className="mt-2 flex items-baseline gap-1" dir="ltr">
+                    <span className="text-4xl font-semibold tabular-nums text-foreground">
                       {plan.price ?? "—"}
                     </span>
-                    <span className={`text-lg whitespace-nowrap ${isFeatured ? "text-white/80" : "text-muted"}`}>
-                      DZD
-                    </span>
+                    <span className="text-sm text-muted">DZD</span>
                   </div>
                 </div>
 
-                <ul className="mt-8 flex-1 space-y-4">
+                <ul className="mt-8 flex-1 space-y-3 border-t border-border pt-7">
                   {plan.features.map((feature: string) => (
-                    <li key={feature} className="flex items-center gap-3 text-sm">
-                      <svg
-                        className={`h-5 w-5 flex-shrink-0 ${
-                          isFeatured ? "text-white" : "text-primary"
-                        }`}
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="2"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
+                    <li key={feature} className="flex items-start gap-3 text-sm text-muted">
+                      <svg className="mt-1 h-3.5 w-3.5 shrink-0 text-foreground" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                       </svg>
                       {feature}
@@ -131,22 +96,20 @@ export default function Pricing() {
 
                 <a
                   href="#contact"
-                  className={`mt-auto inline-flex h-12 w-full items-center justify-center rounded-full text-sm font-semibold transition-all active:scale-95 ${
-                    isFeatured
-                      ? "bg-white text-primary hover:bg-white/90"
-                      : "bg-foreground text-white hover:bg-foreground/90"
-                  }`}
+                  className="mt-8 inline-flex h-12 items-center justify-center border border-border text-sm font-medium text-foreground transition-colors hover:border-foreground/50"
                 >
                   {t("pricing.getStarted")}
                 </a>
-              </div>
+              </Reveal>
             );
           })}
         </div>
 
-        <p className="mt-10 text-center text-sm text-muted max-w-xl mx-auto">
-          {t("pricing.disclaimer")}
-        </p>
+        <Reveal delay={0.1}>
+          <p className="mt-10 mx-auto max-w-xl text-center text-sm text-muted">
+            {t("pricing.disclaimer")}
+          </p>
+        </Reveal>
       </div>
     </section>
   );

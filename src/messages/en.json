@@ -6,22 +6,23 @@
     "ogDescription": "Modern web solutions for businesses. Professional web services and digital solutions."
   },
   "nav": {
+    "work": "Work",
     "services": "Services",
-    "projects": "Projects",
-    "pricing": "Pricing",
-    "faq": "FAQ",
+    "about": "About",
     "contact": "Contact"
   },
   "header": {
     "subtitle": "Websites · Apps · Digital Products"
   },
   "hero": {
-    "badge": "Web Services & Digital Solutions — Algeria",
+    "badge": "Web Services & Digital Solutions",
     "title": "Modern Web Solutions That Help Businesses",
     "titleAccent": ["Grow", "Sell", "Convert", "Scale", "Succeed", "Lead"],
     "subtitle": "Fast, professional, mobile-friendly web solutions designed to build trust and attract customers. Get a website that works as hard as you do.",
     "viewProjects": "View Projects",
-    "viewServices": "View Services"
+    "viewServices": "View Services",
+    "availability": "Available for new projects",
+    "location": "Based in Algeria "
   },
   "services": {
     "label": "What I Offer",
@@ -91,8 +92,8 @@
     ]
   },
   "portfolio": {
-    "label": "My Work",
-    "heading": "Featured Projects",
+    "label": "Selected Work",
+    "heading": "Projects Built to Perform",
     "description": "Real projects I have built for businesses across different industries.",
     "projects": [
       {
@@ -123,7 +124,22 @@
     ],
     "liveDemo": "Live Demo",
     "learnMore": "Learn More",
-    "viewDetails": "Source Code"
+    "viewDetails": "Source Code",
+    "viewCaseStudy": "View Case Study",
+    "viewProject": "View Project"
+  },
+  "about": {
+    "label": "About",
+    "kicker": "The Developer",
+    "heading": "Design, engineering, and care for every pixel.",
+    "intro": "I'm a web developer building fast, precise digital products — from marketing sites to full interactive experiences. I focus on clean code, thoughtful typography, and interfaces that feel effortless.",
+    "portraitCaption": "Portrait",
+    "technologiesTitle": "Technologies",
+    "technologies": ["Next.js", "TypeScript", "React", "Tailwind CSS", "Node.js", "Motion"],
+    "currentProjectsTitle": "Current Projects",
+    "currentProjects": ["Interactive quiz experiences", "Restaurant & fitness web builds", "Productivity desktop tools"],
+    "experienceLabel": "Experience",
+    "experience": "4+ years building and shipping products end-to-end."
   },
   "process": {
     "label": "How I Work",

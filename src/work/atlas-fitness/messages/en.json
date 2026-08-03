@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Home",
+    "membership": "Membership",
+    "trainers": "Trainers",
+    "schedule": "Schedule",
+    "testimonials": "Reviews",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "PUSH BEYOND YOUR LIMITS",
+    "subtitle": "Join Atlas Fitness Club and transform your body with our state-of-the-art equipment and professional coaches",
+    "cta": "WhatsApp",
+    "ctaSecondary": "WhatsApp"
+  },
+  "membership": {
+    "title": "Our Plans",
+    "subtitle": "Choose the plan that fits you",
+    "starter": {
+      "name": "Starter",
+      "price": "4,000 DA",
+      "period": "/month",
+      "features": [
+        "Gym access (7AM–10PM)",
+        "Basic machines",
+        "Locker rooms & showers",
+        "1 coaching session"
+      ],
+      "cta": "WhatsApp"
+    },
+    "premium": {
+      "name": "Premium",
+      "price": "7,000 DA",
+      "period": "/month",
+      "features": [
+        "Unlimited access (6AM–11PM)",
+        "All equipment",
+        "Group classes included",
+        "2 coaching sessions/week",
+        "Sauna & hammam access",
+        "Custom program"
+      ],
+      "cta": "WhatsApp",
+      "popular": "Popular"
+    },
+    "elite": {
+      "name": "Elite",
+      "price": "12,000 DA",
+      "period": "/month",
+      "features": [
+        "24/7 access",
+        "All sessions access",
+        "Unlimited personal coaching",
+        "Dedicated nutritionist",
+        "Spa & pool access",
+        "Reserved parking",
+        "Free guest pass every month"
+      ],
+      "cta": "WhatsApp"
+    }
+  },
+  "trainers": {
+    "title": "Our Trainers",
+    "subtitle": "Certified professionals to guide you",
+    "trainer1": {
+      "name": "Karim Benali",
+      "role": "Strength Coach",
+      "bio": "10+ years in bodybuilding and fitness. Specialist in mass gain and strength training."
+    },
+    "trainer2": {
+      "name": "Sofia Mansouri",
+      "role": "Fitness & Yoga Coach",
+      "bio": "Expert in yoga, Pilates and fitness. Certified in sports nutrition."
+    },
+    "trainer3": {
+      "name": "Rayan Hakimi",
+      "role": "MMA & HIIT Coach",
+      "bio": "Former professional athlete. Specialist in HIIT, Boxing and physical conditioning."
+    }
+  },
+  "schedule": {
+    "title": "Class Schedule",
+    "subtitle": "A varied schedule for all levels",
+    "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "classes": {
+      "musculation": "Weights",
+      "yoga": "Yoga",
+      "hiit": "HIIT",
+      "boxe": "Boxing",
+      "spinning": "Spinning",
+      "pilates": "Pilates",
+      "crossfit": "CrossFit"
+    },
+    "timeSlots": ["7–8AM", "9–10AM", "12–1PM", "5–6PM", "6–7PM", "7–8PM"]
+  },
+  "statistics": {
+    "title": "Atlas by the Numbers",
+    "members": "Active Members",
+    "trainers": "Coaches",
+    "classes": "Classes/Week",
+    "awards": "Awards",
+    "memberCount": 2500,
+    "trainerCount": 24,
+    "classCount": 68,
+    "awardCount": 12
+  },
+  "testimonials": {
+    "title": "What Our Members Say",
+    "subtitle": "Join a community of over 2000 satisfied members",
+    "review1": {
+      "name": "Amine B.",
+      "text": "Best gym in Algiers! The equipment is modern and the coaches are truly professional.",
+      "rating": 5
+    },
+    "review2": {
+      "name": "Lina K.",
+      "text": "I lost 15 kg in 4 months thanks to the personalized program. 100% recommended!",
+      "rating": 5
+    },
+    "review3": {
+      "name": "Mehdi S.",
+      "text": "The group classes are amazing. The atmosphere is motivating and the hours are flexible.",
+      "rating": 5
+    },
+    "review4": {
+      "name": "Ines R.",
+      "text": "Personal coaching changed the way I train. Visible results in just a few weeks.",
+      "rating": 5
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here for you!",
+    "messenger": "WhatsApp",
+    "messengerText": "Get in touch on WhatsApp",
+    "email": "Email",
+    "emailText": "3iikStudio@proton.me",
+    "location": "Algiers, Algeria",
+    "locationText": "Find us in the heart of Algiers"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "tagline": "Transform your body, forge your mind."
+  }
+}

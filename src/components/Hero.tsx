@@ -1,84 +1,134 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
-import Typewriter from "@/components/ui/typewriter";
+import { Reveal } from "@/components/ui/reveal";
+import { Magnetic } from "@/components/ui/magnetic";
+
+const tech = [
+  "Next.js",
+  "React",
+  "TypeScript",
+  "Tailwind CSS",
+  "Node.js",
+  "Motion",
+  "Vercel",
+  "Three.js",
+];
 
 export default function Hero() {
-  const { t, tm, dir } = useLanguage();
-  const titleText = t("hero.title");
-  const titleWords = titleText.split(/\s+/);
-  const isRtl = dir === "rtl";
-  const titlePrefix = isRtl ? titleWords.slice(0, -1).join(" ") : null;
-  const titleSuffix = isRtl ? titleWords[titleWords.length - 1] : null;
+  const { t, tm, locale } = useLanguage();
+  const isRtl = locale === "ar";
+
+  const titleAccent = tm("hero.titleAccent");
+  const accent = Array.isArray(titleAccent) ? (titleAccent[0] as string) : "";
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-surface via-white to-primary-light pt-32 pb-20 sm:pt-40 sm:pb-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
-          <div className="animate-fade-in-up">
-            <span className="inline-block rounded-full bg-primary-light px-4 py-1.5 text-xs font-semibold tracking-wide text-primary uppercase">
-              {t("hero.badge")}
+    <section className="relative flex min-h-screen flex-col overflow-hidden">
+      <div className="bg-grid pointer-events-none absolute inset-0" aria-hidden="true" />
+      <div
+        className="pointer-events-none absolute inset-0"
+        aria-hidden="true"
+        style={{
+          background:
+            "radial-gradient(ellipse 80% 60% at 50% -10%, rgba(255,255,255,0.06), transparent 60%)",
+        }}
+      />
+
+      <div className="relative mx-auto grid w-full max-w-6xl flex-1 items-center gap-14 px-5 pb-16 pt-28 sm:px-8 lg:grid-cols-12 lg:gap-10 lg:px-10 lg:pt-24">
+        <div className="lg:col-span-7">
+          <Reveal>
+            <span className="text-[11px] font-medium uppercase tracking-[0.35em] text-muted">
+              3iik Studio
             </span>
+          </Reveal>
+
+          <Reveal delay={0.08}>
+            <h1 className={`mt-7 text-[13vw] font-semibold leading-[0.95] tracking-tight text-foreground sm:text-6xl lg:text-7xl ${isRtl ? "text-right" : ""}`}>
+              {t("hero.title")}
+              {accent && (
+                <>
+                  <br />
+                  <span className="text-muted">{accent}</span>
+                </>
+              )}
+            </h1>
+          </Reveal>
+
+          <Reveal delay={0.16}>
+            <p className={`mt-7 max-w-xl text-lg leading-relaxed text-muted ${isRtl ? "text-right" : ""}`}>
+              {t("hero.subtitle")}
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.24}>
+            <div className={`mt-10 flex flex-wrap gap-4 ${isRtl ? "justify-start rtl:flex-row-reverse" : ""}`}>
+              <Magnetic>
+                <a
+                  href="#work"
+                  className="group inline-flex h-12 items-center gap-3 bg-foreground px-7 text-sm font-medium text-background transition-transform hover:bg-foreground/90 active:scale-[0.98]"
+                >
+                  {t("hero.viewProjects")}
+                  <svg className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                </a>
+              </Magnetic>
+              <a
+                href="#services"
+                className="inline-flex h-12 items-center border border-border px-7 text-sm font-medium text-foreground transition-colors hover:border-foreground/40"
+              >
+                {t("hero.viewServices")}
+              </a>
+            </div>
+          </Reveal>
+        </div>
+
+        <Reveal delay={0.2} className="lg:col-span-5">
+          <div className="group relative">
+            <div className="absolute -inset-3 border border-border/60" aria-hidden="true" />
+            <div className="relative aspect-[4/5] overflow-hidden bg-surface">
+              <Image
+                src="/images/projects/le-jardin.jpg"
+                alt={t("hero.title")}
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover opacity-80 grayscale transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" aria-hidden="true" />
+              <div className="absolute bottom-4 left-4 text-xs uppercase tracking-[0.2em] text-muted">
+                3iik · Selected Work
+              </div>
+            </div>
           </div>
+        </Reveal>
+      </div>
 
-          <h1 className="animate-fade-in-up animate-fade-in-up-delay-1 mt-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl leading-[1.1]">
-            {isRtl ? (
-              <>
-                {titlePrefix}{" "}
-                <span className="inline-flex items-center gap-1 whitespace-nowrap">
-                  <span>{titleSuffix}</span>
-                  <Typewriter
-                    as="span"
-                    text={tm("hero.titleAccent") as string[]}
-                    speed={70}
-                    deleteSpeed={40}
-                    waitTime={1500}
-                    cursorChar="|"
-                    className="text-primary"
-                    dir={dir}
-                  />
-                </span>
-              </>
-            ) : (
-              <>
-                {titleText}{" "}
-                <Typewriter
-                  as="span"
-                  text={tm("hero.titleAccent") as string[]}
-                  speed={70}
-                  deleteSpeed={40}
-                  waitTime={1500}
-                  cursorChar="|"
-                  className="text-primary"
-                  dir={dir}
-                />
-              </>
-            )}
-          </h1>
-
-          <p className="animate-fade-in-up animate-fade-in-up-delay-2 mt-6 text-lg leading-relaxed text-muted sm:text-xl max-w-2xl mx-auto">
-            {t("hero.subtitle")}
-          </p>
-
-          <div className="animate-fade-in-up animate-fade-in-up-delay-3 mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="#projects"
-              className="inline-flex h-12 w-full sm:w-auto items-center justify-center rounded-full bg-foreground px-8 text-sm font-semibold text-white transition-all hover:bg-foreground/90 active:scale-95 shadow-lg shadow-foreground/10"
-            >
-              {t("hero.viewProjects")}
-            </a>
-            <a
-              href="#services"
-              className="inline-flex h-12 w-full sm:w-auto items-center justify-center rounded-full border-2 border-primary px-8 text-sm font-semibold text-primary transition-all hover:bg-primary hover:text-white active:scale-95"
-            >
-              {t("hero.viewServices")}
-            </a>
+      <div className="relative border-t border-border py-5">
+        <div className="mx-auto flex max-w-6xl flex-col gap-6 px-5 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-10">
+          <div className="flex items-center gap-3">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-foreground opacity-60" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-foreground" />
+            </span>
+            <span className="text-sm text-muted">{t("hero.availability")} · {t("hero.location")}</span>
+          </div>
+        </div>
+        <div
+          className="relative mt-5 overflow-hidden whitespace-nowrap border-y border-border py-3"
+          style={{ maskImage: "linear-gradient(to right, transparent, #000 10%, #000 90%, transparent)" }}
+        >
+          <div className="animate-marquee inline-block">
+            {[...tech, ...tech].map((item, i) => (
+              <span key={i} className="mx-8 inline-flex items-center gap-8 text-sm uppercase tracking-[0.25em] text-muted">
+                {item}
+                <span aria-hidden="true" className="text-foreground/40">✦</span>
+              </span>
+            ))}
           </div>
         </div>
       </div>
-
-      <div className={`absolute -top-40 ${dir === "rtl" ? "-left-40" : "-right-40"} h-80 w-80 rounded-full bg-primary/5 blur-3xl`} aria-hidden="true" />
-      <div className={`absolute -bottom-40 ${dir === "rtl" ? "-right-40" : "-left-40"} h-80 w-80 rounded-full bg-primary/5 blur-3xl`} aria-hidden="true" />
     </section>
   );
 }

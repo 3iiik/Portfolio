@@ -7,67 +7,27 @@ export default function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="border-t border-border bg-white">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-8 py-12 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="lg:col-span-2">
-            <a href="#" className="flex flex-col leading-tight">
-              <span className="text-xl font-bold tracking-tight text-foreground">
-                3iik <span className="font-light text-muted">Studio</span>
-              </span>
-              <span className="text-[10px] font-medium tracking-wider text-primary uppercase">
-                {t("header.subtitle")}
-              </span>
-            </a>
-            <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">
-              {t("footer.description")}
-            </p>
-          </div>
+    <footer className="border-t border-border">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-10 sm:flex-row sm:px-8 lg:px-10">
+        <a href="#" className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-foreground">
+          <span className="grid h-8 w-8 place-items-center border border-border text-foreground">3</span>
+          3iik&nbsp;Studio
+        </a>
 
-          <div>
-            <h4 className="text-sm font-semibold text-foreground">{t("footer.quickLinks")}</h4>
-            <ul className="mt-4 space-y-3">
-              {[
-                { key: "services", href: "#services" },
-                { key: "projects", href: "#projects" },
-                { key: "pricing", href: "#pricing" },
-                { key: "faq", href: "#faq" },
-                { key: "contact", href: "#contact" },
-              ].map((link) => (
-                <li key={link.key}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-muted transition-colors hover:text-foreground"
-                  >
-                    {t(`nav.${link.key}`)}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <p className="text-xs text-muted">
+          &copy; {year} 3iik Studio. {t("footer.copyright")}
+        </p>
 
-          <div>
-            <h4 className="text-sm font-semibold text-foreground">{t("footer.connect")}</h4>
-            <ul className="mt-4 space-y-3">
-              <li>
-                <a
-                  href="mailto:3iikStudio@proton.me"
-                  className="text-sm text-muted transition-colors hover:text-foreground"
-                >
-                  3iikStudio@proton.me
-                </a>
-              </li>
-              <li>
-                <span className="text-sm text-muted">Algeria</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="border-t border-border py-6">
-          <p className="text-center text-xs text-muted">
-            &copy; {year} 3iik Studio. {t("footer.copyright")}
-          </p>
+        <div className="flex items-center gap-6">
+          <a href="mailto:3iikStudio@proton.me" className="text-xs text-muted transition-colors hover:text-foreground">
+            Email
+          </a>
+          <a href="https://github.com/3iiik" target="_blank" rel="noopener noreferrer" className="text-xs text-muted transition-colors hover:text-foreground">
+            GitHub
+          </a>
+          <a href="https://twitter.com/3iiik" target="_blank" rel="noopener noreferrer" className="text-xs text-muted transition-colors hover:text-foreground">
+            Twitter
+          </a>
         </div>
       </div>
     </footer>

@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "membership": "Abonnements",
+    "trainers": "Coachs",
+    "schedule": "Horaires",
+    "testimonials": "Avis",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "DÉPASSEZ VOS LIMITES",
+    "subtitle": "Rejoignez Atlas Fitness Club et transformez votre corps avec nos équipements de pointe et nos coachs professionnels",
+    "cta": "Contacter sur WhatsApp",
+    "ctaSecondary": "Contacter sur WhatsApp"
+  },
+  "membership": {
+    "title": "Nos Abonnements",
+    "subtitle": "Choisissez le plan qui vous correspond",
+    "starter": {
+      "name": "Starter",
+      "price": "4 000 DA",
+      "period": "/mois",
+      "features": [
+        "Accès salle (7h–22h)",
+        "Machines de base",
+        "Vestiaires & douches",
+        "1 séance coaching"
+      ],
+      "cta": "Contacter sur WhatsApp"
+    },
+    "premium": {
+      "name": "Premium",
+      "price": "7 000 DA",
+      "period": "/mois",
+      "features": [
+        "Accès illimité (6h–23h)",
+        "Tous les équipements",
+        "Cours collectifs inclus",
+        "2 séances coaching/semaine",
+        "Accès sauna & hammam",
+        "Programme personnalisé"
+      ],
+      "cta": "Contacter sur WhatsApp",
+      "popular": "Populaire"
+    },
+    "elite": {
+      "name": "Elite",
+      "price": "12 000 DA",
+      "period": "/mois",
+      "features": [
+        "Accès 24h/24 7j/7",
+        "Accès toutes les sessions",
+        "Coaching personnel illimité",
+        "Nutritionniste dédié",
+        "Accès spa & piscine",
+        "Parking réservé",
+        "Invité offert chaque mois"
+      ],
+      "cta": "Contacter sur WhatsApp"
+    }
+  },
+  "trainers": {
+    "title": "Nos Coachs",
+    "subtitle": "Des professionnels certifiés pour vous accompagner",
+    "trainer1": {
+      "name": "Karim Benali",
+      "role": "Coach Musculation",
+      "bio": "10+ ans d'expérience en musculation et fitness. Spécialiste en prise de masse et force."
+    },
+    "trainer2": {
+      "name": "Sofia Mansouri",
+      "role": "Coach Fitness & Yoga",
+      "bio": "Experte en yoga, Pilates et fitness. Certifiée en nutrition sportive."
+    },
+    "trainer3": {
+      "name": "Rayan Hakimi",
+      "role": "Coach MMA & HIIT",
+      "bio": "Ancien athlète professionnel. Spécialiste en HIIT, Boxe et conditionnement physique."
+    }
+  },
+  "schedule": {
+    "title": "Horaires des Cours",
+    "subtitle": "Un planning varié pour tous les niveaux",
+    "days": ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"],
+    "classes": {
+      "musculation": "Musculation",
+      "yoga": "Yoga",
+      "hiit": "HIIT",
+      "boxe": "Boxe",
+      "spinning": "Spinning",
+      "pilates": "Pilates",
+      "crossfit": "CrossFit"
+    },
+    "timeSlots": ["7h–8h", "9h–10h", "12h–13h", "17h–18h", "18h–19h", "19h–20h"]
+  },
+  "statistics": {
+    "title": "Atlas en Chiffres",
+    "members": "Membres Actifs",
+    "trainers": "Coachs",
+    "classes": "Cours/Semaine",
+    "awards": "Récompenses",
+    "memberCount": 2500,
+    "trainerCount": 24,
+    "classCount": 68,
+    "awardCount": 12
+  },
+  "testimonials": {
+    "title": "Ce que disent nos membres",
+    "subtitle": "Rejoignez une communauté de plus de 2000 membres satisfaits",
+    "review1": {
+      "name": "Amine B.",
+      "text": "Meilleure salle d'Alger ! Les équipements sont modernes et les coachs vraiment professionnels.",
+      "rating": 5
+    },
+    "review2": {
+      "name": "Lina K.",
+      "text": "J'ai perdu 15 kg en 4 mois grâce au programme personnalisé. Je recommande à 100 % !",
+      "rating": 5
+    },
+    "review3": {
+      "name": "Mehdi S.",
+      "text": "Les cours collectifs sont incroyables. L'ambiance est motivante et les horaires flexibles.",
+      "rating": 5
+    },
+    "review4": {
+      "name": "Ines R.",
+      "text": "Le coaching personnel a changé ma façon de m'entraîner. Résultats visibles en quelques semaines.",
+      "rating": 5
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "On est là pour vous !",
+    "messenger": "WhatsApp",
+    "messengerText": "Contactez-nous sur WhatsApp",
+    "email": "Email",
+    "emailText": "3iikStudio@proton.me",
+    "location": "Alger, Algérie",
+    "locationText": "Retrouvez-nous au cœur d'Alger"
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "tagline": "Transformez votre corps, forgez votre esprit."
+  }
+}

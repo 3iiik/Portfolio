@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "story": "Notre Histoire",
+    "chef": "Le Chef",
+    "menu": "Menu",
+    "gallery": "Galerie",
+    "testimonials": "Avis",
+    "contact": "Contact",
+    "reservation": "WhatsApp"
+  },
+  "hero": {
+    "title": "Le Jardin",
+    "subtitle": "Découvrez une expérience culinaire exceptionnelle au cœur d'Alger, où la tradition rencontre la modernité dans chaque plat.",
+    "tagline": "Fine Cuisine Méditerranéenne — Alger",
+    "cta_primary": "Contacter sur WhatsApp",
+    "cta_secondary": "Découvrir le Menu"
+  },
+  "story": {
+    "title": "Notre Histoire",
+    "subtitle": "Une passion pour la cuisine méditerranéenne",
+    "paragraph1": "Le Jardin est né d'un amour simple mais profond pour la cuisine méditerranéenne. Fondé par le Chef Antoine Moreau, un artiste culinaire de troisième génération originaire de Marseille avec des racines algériennes, notre restaurant est l'aboutissement d'un voyage à travers les saveurs du bassin méditerranéen.",
+    "paragraph2": "Après avoir été formé dans certaines des cuisines les plus prestigieuses de Paris, Barcelone et Istanbul, le Chef Antoine est retourné dans sa terre ancestrale pour créer une expérience gastronomique qui rend hommage aux riches traditions culinaires de la région tout en adoptant des techniques et une présentation modernes.",
+    "paragraph3": "Chaque plat du Jardin raconte une histoire — une histoire de côtes ensoleillées, de souks animés, de réunions de famille et de la joie simple de partager un beau repas avec ses proches."
+  },
+  "chef": {
+    "title": "Notre Chef",
+    "subtitle": "Une passion, une vision, une signature",
+    "name": "Chef Karim Benali",
+    "bio": "Formé aux côtés des plus grands chefs méditerranéens, Karim Benali a parcouru le bassin méditerranéen à la recherche des saveurs authentiques. De Marseille à Beyrouth, en passant par Barcelone et Tanger, il a su capter l'essence de chaque culture culinaire pour créer une signature unique qui fait la renommée du Jardin.",
+    "experience": "40 ans d'expérience",
+    "awards": "2 Étoiles Michelin",
+    "philosophy": "« La cuisine est l'art de transformer des ingrédients simples en moments extraordinaires. »"
+  },
+  "dishes": {
+    "title": "Plats Signatures",
+    "subtitle": "Un avant-goût d'excellence",
+    "dish1_name": "Tajine d'Agneau aux Abricots",
+    "dish1_desc": "Agneau mijoté lentement avec abricots, amandes et épices aromatiques, servi avec couscous moelleux",
+    "dish2_name": "Bouillabaisse Royale",
+    "dish2_desc": "Soupe de poisson provençale traditionnelle avec crevettes, moules, poisson et safran, servie avec rouille et croûtons",
+    "dish3_name": "Fondant au Chocolat à la Fleur de Sel",
+    "dish3_desc": "Fondant au chocolat riche avec un cœur coulant, saupoudré de fleur de sel et servi avec glace à la vanille"
+  },
+  "menu": {
+    "title": "Notre Menu",
+    "subtitle": "Un voyage de saveurs",
+    "appetizers": "Entrées",
+    "app1_name": "Bruschetta Méditerranéenne",
+    "app1_desc": "Pain grillé garni de tomates mûries au soleil, basilic frais et huile d'olive extra vierge",
+    "app1_price": "1 200 DZD",
+    "app2_name": "Calamars Frits au Citron",
+    "app2_desc": "Calamars légèrement panés servis avec une aïoli citronnée et des micro-herbes",
+    "app2_price": "1 500 DZD",
+    "app3_name": "Salade Niçoise",
+    "app3_desc": "Thon frais, œufs durs, olives et haricots verts sur un lit de mesclun avec vinaigrette à l'anchois",
+    "app3_price": "1 400 DZD",
+    "mains": "Plats Principaux",
+    "main1_name": "Tajine d'Agneau aux Abricots",
+    "main1_desc": "Agneau mijoté lentement avec abricots, amandes et épices aromatiques, servi avec couscous moelleux",
+    "main1_price": "2 800 DZD",
+    "main2_name": "Bouillabaisse Royale",
+    "main2_desc": "Soupe de poisson provençale traditionnelle avec crevettes, moules, poisson et safran, servie avec rouille et croûtons",
+    "main2_price": "3 200 DZD",
+    "main3_name": "Filet de Bar à la Plancha",
+    "main3_desc": "Bar saisi à la plancha avec ratatouille, huile de basilic et beurre blanc à la tomate",
+    "main3_price": "2 900 DZD",
+    "desserts": "Desserts",
+    "dessert1_name": "Fondant au Chocolat à la Fleur de Sel",
+    "dessert1_desc": "Fondant au chocolat riche avec un cœur coulant, saupoudré de fleur de sel et servi avec glace à la vanille",
+    "dessert1_price": "1 300 DZD",
+    "dessert2_name": "Crème Brûlée à la Lavande",
+    "dessert2_desc": "Crème brûlée classique infusée à la lavande provençale, garnie de sucre caramélisé",
+    "dessert2_price": "1 100 DZD",
+    "drinks": "Boissons",
+    "drink1_name": "Thé à la Menthe",
+    "drink1_desc": "Thé à la menthe marocain traditionnel servi avec de délicates pâtisseries",
+    "drink1_price": "500 DZD",
+    "drink2_name": "Citronnade Fraîche",
+    "drink2_desc": "Limonade maison à la menthe fraîche et une touche d'eau de fleur d'oranger",
+    "drink2_price": "400 DZD"
+  },
+  "reservation": {
+    "title": "Réservez Votre Table",
+    "subtitle": "Vivez une expérience gastronomique inoubliable",
+    "description": "Que ce soit pour un dîner romantique, un repas d'affaires ou une célébration familiale, notre équipe se fera un plaisir de vous accueillir et de vous offrir un moment d'exception.",
+    "cta": "Contacter sur WhatsApp",
+    "hours": "Du mardi au dimanche, 12h00 - 22h30"
+  },
+  "gallery": {
+    "title": "Notre Galerie",
+    "subtitle": "Un aperçu de notre univers"
+  },
+  "testimonials": {
+    "title": "Ce Que Disent Nos Clients",
+    "subtitle": "Leur expérience parle d'elle-même",
+    "test1_name": "Sophie Laurent",
+    "test1_text": "Une expérience culinaire exceptionnelle ! Le cadre est magnifique, le service impeccable, et chaque plat est une œuvre d'art. Le Tajine d'Agneau est tout simplement divin.",
+    "test2_name": "Marc Dubois",
+    "test2_text": "Le Jardin est sans conteste le meilleur restaurant méditerranéen d'Alger. La Bouillabaisse Royale m'a transporté directement sur la côte marseillaise.",
+    "test3_name": "Leila Benali",
+    "test3_text": "L'ambiance est chaleureuse et élégante. Le personnel est attentionné et connaît parfaitement la carte. Un véritable joyau culinaire."
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Nous sommes à votre écoute",
+    "address": "12 Rue des Jardins, Alger Centre, 16000 Alger, Algérie",
+    "email": "3iikStudio@proton.me",
+    "messenger": "Contacter sur WhatsApp",
+    "facebook": "Suivez-nous sur Facebook",
+    "form_name": "Votre nom",
+    "form_email": "Votre email",
+    "form_message": "Votre message",
+    "form_submit": "Envoyer"
+  },
+  "footer": {
+    "tagline": "Fine Cuisine Méditerranéenne au Cœur d'Alger",
+    "rights": "Tous droits réservés."
+  }
+}

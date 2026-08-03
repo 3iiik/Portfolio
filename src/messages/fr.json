@@ -6,22 +6,23 @@
     "ogDescription": "Des solutions web modernes pour les entreprises. Services web professionnels."
   },
   "nav": {
+    "work": "Travaux",
     "services": "Services",
-    "projects": "Projets",
-    "pricing": "Tarifs",
-    "faq": "FAQ",
+    "about": "À propos",
     "contact": "Contact"
   },
   "header": {
     "subtitle": "Sites Web · Apps · Produits Digitaux"
   },
   "hero": {
-    "badge": "Services & Solutions Web — Algérie",
+    "badge": "Services & Solutions Web",
     "title": "Des Solutions Web Modernes Qui Aident les Entreprises à",
     "titleAccent": ["Grandir", "Vendre", "Attirer des Clients", "Se Développer", "Réussir", "Convertir"],
     "subtitle": "Des solutions rapides, professionnelles et adaptées aux mobiles, conçues pour inspirer confiance et attirer des clients. Obtenez un site web qui travaille aussi dur que vous.",
     "viewProjects": "Voir les Projets",
-    "viewServices": "Voir les Services"
+    "viewServices": "Voir les Services",
+    "availability": "Disponible pour de nouveaux projets",
+    "location": "Basé en Algérie "
   },
   "services": {
     "label": "Ce que je propose",
@@ -91,8 +92,8 @@
     ]
   },
   "portfolio": {
-    "label": "Mon Travail",
-    "heading": "Projets Réalisés",
+    "label": "Travaux Sélectionnés",
+    "heading": "Des Projets Conçus pour Performer",
     "description": "Des projets web que j'ai créés pour des entreprises de différents secteurs.",
     "projects": [
       {
@@ -123,7 +124,22 @@
     ],
     "liveDemo": "Démo en Direct",
     "learnMore": "En Savoir Plus",
-    "viewDetails": "Code Source"
+    "viewDetails": "Code Source",
+    "viewCaseStudy": "Voir l'Étude de Cas",
+    "viewProject": "Voir le Projet"
+  },
+  "about": {
+    "label": "À propos",
+    "kicker": "Le Développeur",
+    "heading": "Design, ingénierie et soin du détail pour chaque pixel.",
+    "intro": "Je suis développeur web et je crée des produits digitaux rapides et précis — des sites vitrines aux expériences interactives complètes. Je mise sur un code propre, une typographie soignée et des interfaces qui paraissent naturelles.",
+    "portraitCaption": "Portrait",
+    "technologiesTitle": "Technologies",
+    "technologies": ["Next.js", "TypeScript", "React", "Tailwind CSS", "Node.js", "Motion"],
+    "currentProjectsTitle": "Projets en cours",
+    "currentProjects": ["Expériences de quiz interactives", "Sites restaurant & fitness", "Outils de productivité desktop"],
+    "experienceLabel": "Expérience",
+    "experience": "4+ années à concevoir et livrer des produits de bout en bout."
   },
   "process": {
     "label": "Comment je travaille",

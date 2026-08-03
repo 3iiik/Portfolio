@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Tajawal } from "next/font/google";
+import { Geist, Geist_Mono, Tajawal, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,6 +16,11 @@ const tajawal = Tajawal({
   variable: "--font-tajawal",
   subsets: ["arabic"],
   weight: ["400", "500", "700", "800"],
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -64,12 +69,12 @@ export default function RootLayout({
     <html
       lang="fr"
       dir="ltr"
-      className={`${geistSans.variable} ${geistMono.variable} ${tajawal.variable} antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${tajawal.variable} ${playfair.variable} antialiased`}
     >
       <body className="min-h-screen bg-background text-foreground">
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){var l=location.pathname.match(/^\/(fr|en|ar)/);if(l){document.documentElement.lang=l[1];if(l[1]==='ar'){document.documentElement.dir='rtl';document.documentElement.classList.add('locale-ar')}else{document.documentElement.dir='ltr';document.documentElement.classList.remove('locale-ar')}}})()`,
+            __html: `(function(){var l=location.pathname.match(/^\\/(fr|en|ar)/);if(l){document.documentElement.lang=l[1];if(l[1]==='ar'){document.documentElement.dir='rtl';document.documentElement.classList.add('locale-ar')}else{document.documentElement.dir='ltr';document.documentElement.classList.remove('locale-ar')}}})()`,
           }}
         />
         {children}

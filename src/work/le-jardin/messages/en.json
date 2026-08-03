@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Home",
+    "story": "Our Story",
+    "chef": "The Chef",
+    "menu": "Menu",
+    "gallery": "Gallery",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "reservation": "WhatsApp"
+  },
+  "hero": {
+    "title": "Le Jardin",
+    "subtitle": "Discover an exceptional culinary experience in the heart of Algiers, where tradition meets modernity in every dish.",
+    "tagline": "Fine Mediterranean Dining — Algiers",
+    "cta_primary": "WhatsApp",
+    "cta_secondary": "Discover the Menu"
+  },
+  "story": {
+    "title": "Our Story",
+    "subtitle": "A passion for Mediterranean cuisine",
+    "paragraph1": "Le Jardin was born from a simple yet profound love for Mediterranean cuisine. Founded by Chef Antoine Moreau, a third-generation culinary artist from Marseille with Algerian roots, our restaurant is the culmination of a lifelong journey through the flavors of the Mediterranean basin.",
+    "paragraph2": "After training in some of the most prestigious kitchens in Paris, Barcelona, and Istanbul, Chef Antoine returned to his ancestral homeland to create a dining experience that pays homage to the rich culinary traditions of the region while embracing modern techniques and presentation.",
+    "paragraph3": "Every dish at Le Jardin tells a story — a story of sun-drenched coastlines, bustling souks, family gatherings, and the simple joy of sharing a beautiful meal with loved ones. Our menu changes with the seasons, ensuring that every visit offers something new and exciting."
+  },
+  "chef": {
+    "title": "Our Chef",
+    "subtitle": "A passion, a vision, a signature",
+    "name": "Chef Karim Benali",
+    "bio": "Trained alongside the greatest Mediterranean chefs, Karim Benali has traveled across the Mediterranean basin in search of authentic flavors. From Marseille to Beirut, through Barcelona and Tangier, he has captured the essence of each culinary culture to create a unique signature that has made Le Jardin famous.",
+    "experience": "40 years of experience",
+    "awards": "2 Michelin Stars",
+    "philosophy": "\"Cooking is the art of transforming simple ingredients into extraordinary moments.\""
+  },
+  "dishes": {
+    "title": "Signature Dishes",
+    "subtitle": "A taste of excellence",
+    "dish1_name": "Tajine d'Agneau aux Abricots",
+    "dish1_desc": "Slow-cooked lamb with apricots, almonds, and aromatic spices, served with fluffy couscous",
+    "dish2_name": "Bouillabaisse Royale",
+    "dish2_desc": "Traditional Provençal seafood stew with prawns, mussels, fish, and saffron, served with rouille and croutons",
+    "dish3_name": "Fondant au Chocolat à la Fleur de Sel",
+    "dish3_desc": "Rich chocolate fondant with a molten center, sprinkled with fleur de sel and served with vanilla ice cream"
+  },
+  "menu": {
+    "title": "Our Menu",
+    "subtitle": "A journey of flavors",
+    "appetizers": "Starters",
+    "app1_name": "Bruschetta Méditerranéenne",
+    "app1_desc": "Grilled sourdough topped with vine-ripened tomatoes, fresh basil, and drizzled with extra virgin olive oil",
+    "app1_price": "1,200 DZD",
+    "app2_name": "Calamars Frits au Citron",
+    "app2_desc": "Lightly battered calamari served with a zesty lemon aioli and micro herbs",
+    "app2_price": "1,500 DZD",
+    "app3_name": "Salade Niçoise",
+    "app3_desc": "Fresh tuna, hard-boiled eggs, olives, and green beans on a bed of mixed greens with anchovy vinaigrette",
+    "app3_price": "1,400 DZD",
+    "mains": "Main Courses",
+    "main1_name": "Tajine d'Agneau aux Abricots",
+    "main1_desc": "Slow-cooked lamb with apricots, almonds, and aromatic spices, served with fluffy couscous",
+    "main1_price": "2,800 DZD",
+    "main2_name": "Bouillabaisse Royale",
+    "main2_desc": "Traditional Provençal seafood stew with prawns, mussels, fish, and saffron, served with rouille and croutons",
+    "main2_price": "3,200 DZD",
+    "main3_name": "Filet de Bar à la Plancha",
+    "main3_desc": "Pan-seared sea bass with ratatouille, basil oil, and a light tomato beurre blanc",
+    "main3_price": "2,900 DZD",
+    "desserts": "Desserts",
+    "dessert1_name": "Fondant au Chocolat à la Fleur de Sel",
+    "dessert1_desc": "Rich chocolate fondant with a molten center, sprinkled with fleur de sel and served with vanilla ice cream",
+    "dessert1_price": "1,300 DZD",
+    "dessert2_name": "Crème Brûlée à la Lavande",
+    "dessert2_desc": "Classic crème brûlée infused with Provençal lavender, topped with caramelized sugar",
+    "dessert2_price": "1,100 DZD",
+    "drinks": "Drinks",
+    "drink1_name": "Mint Tea",
+    "drink1_desc": "Traditional Moroccan mint tea served with delicate pastries",
+    "drink1_price": "500 DZD",
+    "drink2_name": "Citronnade Fraîche",
+    "drink2_desc": "House-made lemonade with fresh mint and a hint of orange blossom water",
+    "drink2_price": "400 DZD"
+  },
+  "reservation": {
+    "title": "Book Your Table",
+    "subtitle": "Experience an unforgettable culinary journey",
+    "description": "Whether for a romantic dinner, a business lunch or a family celebration, our team will be delighted to welcome you and offer you an exceptional moment.",
+    "cta": "WhatsApp",
+    "hours": "Tuesday to Sunday, 12:00 PM - 10:30 PM"
+  },
+  "gallery": {
+    "title": "Our Gallery",
+    "subtitle": "A glimpse into our world"
+  },
+  "testimonials": {
+    "title": "What Our Guests Say",
+    "subtitle": "Their experience speaks for itself",
+    "test1_name": "Sophie Laurent",
+    "test1_text": "An exceptional culinary experience! The setting is beautiful, the service impeccable, and every dish is a work of art. The Lamb Tagine is simply divine.",
+    "test2_name": "Marc Dubois",
+    "test2_text": "Le Jardin is without doubt the best Mediterranean restaurant in Algiers. The Royal Bouillabaisse transported me straight to the Marseille coast.",
+    "test3_name": "Leila Benali",
+    "test3_text": "The atmosphere is warm and elegant. The staff is attentive and knows the menu perfectly. A true culinary gem."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here for you",
+    "address": "12 Rue des Jardins, Algiers Center, 16000 Algiers, Algeria",
+    "email": "3iikStudio@proton.me",
+    "messenger": "WhatsApp",
+    "facebook": "Follow us on Facebook",
+    "form_name": "Your name",
+    "form_email": "Your email",
+    "form_message": "Your message",
+    "form_submit": "Send"
+  },
+  "footer": {
+    "tagline": "Fine Mediterranean Dining in the Heart of Algiers",
+    "rights": "All rights reserved."
+  }
+}

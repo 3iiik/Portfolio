@@ -1,87 +1,91 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const navItems = [
+  { key: "work", href: "#work" },
   { key: "services", href: "#services" },
-  { key: "projects", href: "#projects" },
-  { key: "pricing", href: "#pricing" },
-  { key: "faq", href: "#faq" },
+  { key: "about", href: "#about" },
   { key: "contact", href: "#contact" },
 ];
 
 export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useLanguage();
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <a href="#" className="flex flex-col leading-tight">
-            <span className="text-xl font-bold tracking-tight text-foreground">
-              3iik{" "}
-              <span className="font-light text-muted">Studio</span>
-            </span>
-            <span className="text-[10px] font-medium tracking-wider text-primary uppercase">
-              {t("header.subtitle")}
-            </span>
-          </a>
+    <header
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+        scrolled ? "border-b border-border bg-background/80 backdrop-blur-md" : "bg-transparent"
+      }`}
+    >
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8 lg:px-10">
+        <a href="#" className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-foreground">
+          <span className="grid h-8 w-8 place-items-center border border-border text-foreground">
+            3
+          </span>
+          3iik&nbsp;Studio
+        </a>
 
-          <nav className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <a
-                key={item.key}
-                href={item.href}
-                className="text-sm font-medium text-muted hover:text-foreground transition-colors"
-              >
-                {t(`nav.${item.key}`)}
-              </a>
-            ))}
-          </nav>
-
-          <div className="hidden md:flex items-center gap-4">
-            <LanguageSwitcher />
-          </div>
-
-          <div className="flex md:hidden items-center gap-2">
-            <LanguageSwitcher />
-            <button
-              type="button"
-              onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center rounded-md p-2 text-muted hover:text-foreground"
-              aria-label="Toggle navigation menu"
+        <nav className="hidden items-center gap-9 md:flex">
+          {navItems.map((item) => (
+            <a
+              key={item.key}
+              href={item.href}
+              className="text-sm text-muted transition-colors duration-200 hover:text-foreground"
             >
-              {isOpen ? (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              ) : (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-              )}
-            </button>
-          </div>
+              {t(`nav.${item.key}`)}
+            </a>
+          ))}
+        </nav>
+
+        <div className="hidden md:flex">
+          <LanguageSwitcher />
         </div>
 
-        {isOpen && (
-          <div className="md:hidden border-t border-border py-4 space-y-3">
+        <div className="flex items-center gap-3 md:hidden">
+          <LanguageSwitcher />
+          <button
+            type="button"
+            onClick={() => setIsOpen((o) => !o)}
+            aria-label="Toggle menu"
+            className="flex h-9 w-9 items-center justify-center border border-border text-foreground"
+          >
+            <span className="relative flex flex-col gap-1">
+              <span className={`h-px w-4 bg-current transition-transform ${isOpen ? "translate-y-[5px] rotate-45" : ""}`} />
+              <span className={`h-px w-4 bg-current transition-opacity ${isOpen ? "opacity-0" : ""}`} />
+              <span className={`h-px w-4 bg-current transition-transform ${isOpen ? "-translate-y-[5px] -rotate-45" : ""}`} />
+            </span>
+          </button>
+        </div>
+      </div>
+
+      {isOpen && (
+        <div className="border-t border-border bg-background/95 backdrop-blur-md md:hidden">
+          <nav className="flex flex-col px-5 py-3">
             {navItems.map((item) => (
               <a
                 key={item.key}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="block text-sm font-medium text-muted hover:text-foreground transition-colors py-2"
+                className="border-b border-border/60 py-4 text-sm text-muted transition-colors hover:text-foreground"
               >
                 {t(`nav.${item.key}`)}
               </a>
             ))}
-          </div>
-        )}
-      </div>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
