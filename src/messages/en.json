@@ -34,7 +34,7 @@
       "buildingTitle": "Currently building",
       "stackTitle": "Stack",
       "stats": [
-        { "value": "4+", "label": "Years shipping" },
+        { "value": "100%", "label": "Responsive" },
         { "value": "5", "label": "Projects live" },
         { "value": "3", "label": "Industries served" }
       ]
