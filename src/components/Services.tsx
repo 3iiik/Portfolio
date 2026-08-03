@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import { Reveal } from "@/components/ui/reveal";
+import StudioPanel from "@/components/StudioPanel";
 
 const icons: Record<string, React.ReactNode> = {
   "0": (
@@ -61,6 +62,7 @@ export default function Services() {
               <p className="mt-3 text-sm leading-relaxed text-muted">{item.description}</p>
             </Reveal>
           ))}
+          <StudioPanel />
         </div>
       </div>
     </section>

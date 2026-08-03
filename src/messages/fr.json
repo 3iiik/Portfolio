@@ -28,6 +28,17 @@
     "label": "Ce que je propose",
     "heading": "Services Web",
     "description": "Des sites vitrines aux solutions avancées basées sur l'IA, je construis ce dont votre entreprise a besoin pour se développer en ligne.",
+    "studio": {
+      "kicker": "Studio",
+      "status": "Ouvert aux nouveaux projets",
+      "buildingTitle": "En cours de réalisation",
+      "stackTitle": "Stack",
+      "stats": [
+        { "value": "4+", "label": "Années d'expérience" },
+        { "value": "5", "label": "Projets en ligne" },
+        { "value": "3", "label": "Secteurs accompagnés" }
+      ]
+    },
     "items": [
       {
         "title": "Sites Web d'Entreprise",

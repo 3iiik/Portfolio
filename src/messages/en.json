@@ -28,6 +28,17 @@
     "label": "What I Offer",
     "heading": "Web Services",
     "description": "From simple business websites to advanced AI-powered solutions, I build what your business needs to grow online.",
+    "studio": {
+      "kicker": "Studio",
+      "status": "Open for new projects",
+      "buildingTitle": "Currently building",
+      "stackTitle": "Stack",
+      "stats": [
+        { "value": "4+", "label": "Years shipping" },
+        { "value": "5", "label": "Projects live" },
+        { "value": "3", "label": "Industries served" }
+      ]
+    },
     "items": [
       {
         "title": "Business Websites",

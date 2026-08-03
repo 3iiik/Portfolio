@@ -107,6 +107,71 @@ body {
   background-size: 72px 72px;
 }
 
+/* Slowly drifting grid for the studio panel — subtle background motion */
+@keyframes bg-grid-pan-kf {
+  from { background-position: 0 0; }
+  to { background-position: 72px 72px; }
+}
+.bg-grid-anim {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 72px 72px;
+  animation: bg-grid-pan-kf 30s linear infinite;
+}
+
+/* ============================================================
+   SKELETON LOADING
+   Uses --color-muted at low opacity so it reads subtly on both
+   the dark portfolio and the light migrated-demo palettes.
+   ============================================================ */
+@keyframes skeleton-pulse-kf {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 0.55; }
+}
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background-color: color-mix(in srgb, var(--color-muted) 16%, transparent);
+  animation: skeleton-pulse-kf 1.8s ease-in-out infinite;
+}
+@keyframes skeleton-shimmer-kf {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--color-foreground) 8%, transparent),
+    transparent
+  );
+  animation: skeleton-shimmer-kf 1.6s ease-in-out infinite;
+}
+
+/* ============================================================
+   STUDIO PANEL "CURRENTLY BUILDING" PROGRESS LINES
+   ============================================================ */
+@keyframes studio-progress-kf {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(240%); }
+}
+.studio-bar {
+  position: relative;
+  overflow: hidden;
+}
+.studio-bar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 40%;
+  background: var(--color-foreground);
+  animation: studio-progress-kf 2.6s ease-in-out infinite;
+}
+
 /* Scroll-reveal used by migrated demos */
 .animate-on-scroll {
   opacity: 0;
