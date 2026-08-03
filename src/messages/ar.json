@@ -33,6 +33,7 @@
       "status": "متاح لمشاريع جديدة",
       "buildingTitle": "أعمل حالياً على",
       "stackTitle": "التقنيات",
+      "statsTitle": "الأرقام",
       "stats": [
         { "value": "100٪", "label": "متوافق مع جميع الأجهزة" },
         { "value": "5", "label": "مشاريع منشورة" },
@@ -149,9 +150,7 @@
     "technologiesTitle": "التقنيات",
     "technologies": ["Next.js", "TypeScript", "React", "Tailwind CSS", "Node.js", "Motion"],
     "currentProjectsTitle": "المشاريع الحالية",
-    "currentProjects": ["تجارب اختبار تفاعلية", "مواقع مطاعم وأندية رياضية", "أدوات إنتاجية مكتبية"],
-    "experienceLabel": "الخبرة",
-    "experience": "أكثر من 4 سنوات في تطوير وإطلاق المنتجات من البداية إلى النهاية."
+    "currentProjects": ["تجارب اختبار تفاعلية", "مواقع مطاعم وأندية رياضية", "أدوات إنتاجية مكتبية"]
   },
   "process": {
     "label": "كيف أعمل",

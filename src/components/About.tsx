@@ -43,17 +43,17 @@ export default function About() {
             </Reveal>
 
             <Reveal delay={0.08}>
-              <p className={`mt-8 max-w-xl text-lg leading-relaxed text-muted ${isRtl ? "text-right" : ""}`}>
+              <p className={`mt-10 max-w-xl text-lg leading-relaxed text-muted ${isRtl ? "text-right" : ""}`}>
                 {t("about.intro")}
               </p>
             </Reveal>
 
-            <div className="mt-12 grid gap-12 sm:grid-cols-2">
+            <div className="mt-16 grid gap-14 sm:grid-cols-2">
               <Reveal delay={0.12}>
                 <h3 className="text-sm uppercase tracking-[0.25em] text-muted">
                   {t("about.technologiesTitle")}
                 </h3>
-                <ul className={`mt-5 space-y-2.5 ${isRtl ? "text-right" : ""}`}>
+                <ul className={`mt-6 space-y-3 ${isRtl ? "text-right" : ""}`}>
                   {technologies.map((tech) => (
                     <li key={tech} className="text-sm text-foreground/90">
                       {tech}
@@ -66,7 +66,7 @@ export default function About() {
                 <h3 className="text-sm uppercase tracking-[0.25em] text-muted">
                   {t("about.currentProjectsTitle")}
                 </h3>
-                <ul className={`mt-5 space-y-2.5 ${isRtl ? "text-right" : ""}`}>
+                <ul className={`mt-6 space-y-3 ${isRtl ? "text-right" : ""}`}>
                   {currentProjects.map((project) => (
                     <li key={project} className="flex items-start gap-3 text-sm text-foreground/90">
                       <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-foreground" aria-hidden="true" />
@@ -76,20 +76,9 @@ export default function About() {
                 </ul>
               </Reveal>
             </div>
-
-            <Reveal delay={0.2}>
-              <div className="mt-12 border-t border-border pt-8">
-                <p className="text-sm uppercase tracking-[0.25em] text-muted">
-                  {t("about.experienceLabel")}
-                </p>
-                <p className={`mt-3 text-2xl font-medium tracking-tight text-foreground ${isRtl ? "text-right" : ""}`}>
-                  {t("about.experience")}
-                </p>
-              </div>
-            </Reveal>
           </div>
         </div>
-      </div>
+        </div>
     </section>
   );
 }

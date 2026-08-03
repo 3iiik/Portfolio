@@ -33,6 +33,7 @@
       "status": "Ouvert aux nouveaux projets",
       "buildingTitle": "En cours de réalisation",
       "stackTitle": "Stack",
+      "statsTitle": "Chiffres clés",
       "stats": [
         { "value": "100%", "label": "Responsive" },
         { "value": "5", "label": "Projets en ligne" },
@@ -149,9 +150,7 @@
     "technologiesTitle": "Technologies",
     "technologies": ["Next.js", "TypeScript", "React", "Tailwind CSS", "Node.js", "Motion"],
     "currentProjectsTitle": "Projets en cours",
-    "currentProjects": ["Expériences de quiz interactives", "Sites restaurant & fitness", "Outils de productivité desktop"],
-    "experienceLabel": "Expérience",
-    "experience": "4+ années à concevoir et livrer des produits de bout en bout."
+    "currentProjects": ["Expériences de quiz interactives", "Sites restaurant & fitness", "Outils de productivité desktop"]
   },
   "process": {
     "label": "Comment je travaille",

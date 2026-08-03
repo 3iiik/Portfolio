@@ -33,6 +33,7 @@
       "status": "Open for new projects",
       "buildingTitle": "Currently building",
       "stackTitle": "Stack",
+      "statsTitle": "Stats",
       "stats": [
         { "value": "100%", "label": "Responsive" },
         { "value": "5", "label": "Projects live" },
@@ -149,9 +150,7 @@
     "technologiesTitle": "Technologies",
     "technologies": ["Next.js", "TypeScript", "React", "Tailwind CSS", "Node.js", "Motion"],
     "currentProjectsTitle": "Current Projects",
-    "currentProjects": ["Interactive quiz experiences", "Restaurant & fitness web builds", "Productivity desktop tools"],
-    "experienceLabel": "Experience",
-    "experience": "4+ years building and shipping products end-to-end."
+    "currentProjects": ["Interactive quiz experiences", "Restaurant & fitness web builds", "Productivity desktop tools"]
   },
   "process": {
     "label": "How I Work",

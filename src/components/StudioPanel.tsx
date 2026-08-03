@@ -3,7 +3,7 @@
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function StudioPanel() {
-  const { t, tm, locale } = useLanguage();
+  const { tm, locale } = useLanguage();
   const isRtl = locale === "ar";
 
   const studio = tm("services.studio") as {
@@ -11,6 +11,7 @@ export default function StudioPanel() {
     status: string;
     buildingTitle: string;
     stackTitle: string;
+    statsTitle: string;
     stats: { value: string; label: string }[];
   };
 
@@ -72,7 +73,7 @@ export default function StudioPanel() {
 
           <div className="sm:col-span-2 lg:col-span-1">
             <h3 className="text-sm uppercase tracking-[0.25em] text-muted">
-              {t("about.experienceLabel")}
+              {studio.statsTitle}
             </h3>
             <dl className={`mt-5 space-y-4 ${isRtl ? "text-right" : ""}`}>
               {studio.stats.map((stat) => (
