@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Tajawal, Playfair_Display } from "next/font/google";
+import { Geist, Tajawal, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -21,6 +16,7 @@ const tajawal = Tajawal({
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -69,7 +65,7 @@ export default function RootLayout({
     <html
       lang="fr"
       dir="ltr"
-      className={`${geistSans.variable} ${geistMono.variable} ${tajawal.variable} ${playfair.variable} antialiased`}
+      className={`${geistSans.variable} ${tajawal.variable} ${playfair.variable} antialiased`}
     >
       <body className="min-h-screen bg-background text-foreground">
         <script

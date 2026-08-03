@@ -41,3 +41,6 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# source assets (processed into public/images and app icons)
+/Assets/

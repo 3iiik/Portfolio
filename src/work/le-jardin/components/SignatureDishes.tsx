@@ -29,9 +29,10 @@ export default function SignatureDishes() {
                 <div className="relative h-64 overflow-hidden">
                   <Image
                     src={dishImages[index]}
-                    alt={t(`dishes.${dish}_name`)}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+alt={t(`dishes.${dish}_name`)}
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 </div>

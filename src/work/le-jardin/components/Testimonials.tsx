@@ -40,9 +40,10 @@ export default function Testimonials() {
                   <div className="relative w-12 h-12 rounded-full overflow-hidden">
                     <Image
                       src={`/work/le-jardin/images/testimonial-${index + 1}.jpg`}
-                      alt={t(`testimonials.${tItem}_name`)}
-                      fill
-                      className="object-cover"
+alt={t(`testimonials.${tItem}_name`)}
+                fill
+                sizes="48px"
+                className="object-cover"
                     />
                   </div>
                   <span className="font-serif text-secondary font-semibold">

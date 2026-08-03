@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import { Reveal } from "@/components/ui/reveal";
+import Logo from "@/components/ui/Logo";
 
 export default function About() {
   const { t, tm, locale } = useLanguage();
@@ -19,12 +20,13 @@ export default function About() {
             </span>
             <div className="relative mt-10 aspect-[4/5] border border-border">
               <div className="bg-grid absolute inset-0" aria-hidden="true" />
-              <div className="absolute inset-0 grid place-items-center">
-                <span className="text-[7rem] font-semibold leading-none tracking-tight text-foreground sm:text-[9rem]">
-                  {locale === "ar" ? "٣" : "3"}
-                </span>
+              <div className="absolute inset-0 p-10">
+                <Logo
+                  className="h-full w-full"
+                  sizes="(max-width: 1024px) 80vw, 40vw"
+                />
               </div>
-              <span className="absolute bottom-4 left-4 text-xs uppercase tracking-[0.2em] text-muted">
+              <span className="absolute bottom-4 left-4 bg-background/70 px-2 py-1 text-xs uppercase tracking-[0.2em] text-muted">
                 3iik · {t("about.portraitCaption")}
               </span>
             </div>

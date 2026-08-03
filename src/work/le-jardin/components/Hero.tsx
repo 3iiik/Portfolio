@@ -17,6 +17,7 @@ export default function Hero() {
         src="/work/le-jardin/images/hero.jpg"
         alt="Le Jardin Restaurant"
         fill
+        sizes="100vw"
         className="object-cover"
         priority
       />

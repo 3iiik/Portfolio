@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/context/LanguageContext";
+import Logo from "@/components/ui/Logo";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -10,7 +11,9 @@ export default function Footer() {
     <footer className="border-t border-border">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-10 sm:flex-row sm:px-8 lg:px-10">
         <a href="#" className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-foreground">
-          <span className="grid h-8 w-8 place-items-center border border-border text-foreground">3</span>
+          <span className="block h-8 w-8 overflow-hidden border border-border bg-background">
+            <Logo className="h-full w-full" />
+          </span>
           3iik&nbsp;Studio
         </a>
 

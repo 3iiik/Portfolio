@@ -26,16 +26,16 @@ export default function Process() {
         </Reveal>
 
         <div className="mt-16">
-          <div className={`relative ${isRtl ? "ms-6 border-s" : "ms-6 border-s"} border-line`} style={{ borderColor: "var(--color-border)" }}>
+          <div className="relative ms-6 border-s border-border">
             <div className="flex flex-col">
               {steps.map((step, index) => (
                 <Reveal
                   key={step.number}
                   delay={index * 0.06}
-                  className="relative pb-12 pl-12 last:pb-0"
+                  className="relative pb-12 ps-12 last:pb-0"
                 >
                   <span
-                    className={`absolute top-0 ${isRtl ? "-right-6" : "-left-6"} grid h-3 w-3 -translate-x-1/2 place-items-center rounded-full bg-background ring-1 ring-border`}
+                    className="absolute top-0 -start-6 translate-x-1/2 rtl:-translate-x-1/2 grid h-3 w-3 place-items-center rounded-full bg-background ring-1 ring-border"
                     aria-hidden="true"
                   />
                   <span className="text-xs uppercase tracking-[0.3em] text-muted">

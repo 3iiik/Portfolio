@@ -24,9 +24,10 @@ export default function Chef() {
             <div className="relative h-80 sm:h-96 rounded-lg overflow-hidden shadow-xl">
               <Image
                 src="/work/le-jardin/images/chef.jpg"
-                alt={t('chef.name')}
-                fill
-                className="object-cover"
+alt={t('chef.name')}
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
               />
             </div>
           </SectionAnimation>
