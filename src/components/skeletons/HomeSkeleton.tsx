@@ -70,14 +70,14 @@ export default function HomeSkeleton() {
 
       <main>
         {/* Hero */}
-        <section className="relative flex min-h-[80vh] flex-col overflow-hidden pt-20">
-          <div className="relative mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center px-5 pb-12 sm:px-8 lg:px-10 lg:pt-24">
+        <section className="relative flex min-h-[68vh] flex-col overflow-hidden pt-16">
+          <div className="relative mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center px-5 pb-10 sm:px-8 lg:px-10 lg:pt-20">
             <Skeleton className="h-3 w-32" />
-            <Skeleton className="mt-5 h-14 w-full max-w-3xl sm:h-20 lg:h-24" />
-            <Skeleton className="mt-2 h-14 w-4/5 max-w-2xl sm:h-20 lg:h-24" />
-            <Skeleton className="mt-6 h-8 w-full max-w-xl" />
+            <Skeleton className="mt-4 h-14 w-full max-w-3xl sm:h-16 lg:h-20" />
+            <Skeleton className="mt-2 h-14 w-4/5 max-w-2xl sm:h-16 lg:h-20" />
+            <Skeleton className="mt-5 h-8 w-full max-w-xl" />
             <Skeleton className="mt-2 h-8 w-3/4 max-w-lg" />
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-7 flex flex-wrap gap-4">
               <Skeleton className="h-12 w-40" />
               <Skeleton className="h-12 w-40" />
             </div>

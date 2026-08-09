@@ -23,7 +23,7 @@ export default function Hero() {
   const accent = Array.isArray(titleAccent) ? (titleAccent[0] as string) : "";
 
   return (
-    <section className="relative flex min-h-[80vh] flex-col overflow-hidden">
+    <section className="relative flex min-h-[68vh] flex-col overflow-hidden">
       <div className="bg-grid pointer-events-none absolute inset-0" aria-hidden="true" />
       <div
         className="pointer-events-none absolute inset-0"
@@ -34,7 +34,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center px-5 pb-12 pt-20 sm:px-8 lg:px-10 lg:pt-24">
+      <div className="relative mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center px-5 pb-10 pt-16 sm:px-8 lg:px-10 lg:pt-20">
         <Reveal>
           <span className="text-[11px] font-medium uppercase tracking-[0.35em] text-muted">
             3iik Studio
@@ -42,7 +42,7 @@ export default function Hero() {
         </Reveal>
 
         <Reveal delay={0.08}>
-          <h1 className={`mt-5 max-w-4xl text-[13vw] font-semibold leading-[0.95] tracking-tight text-foreground sm:text-7xl lg:text-8xl ${isRtl ? "text-right" : ""}`}>
+          <h1 className={`mt-4 max-w-4xl text-[10vw] font-semibold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl ${isRtl ? "text-right" : ""}`}>
             {t("hero.title")}
             {accent && (
               <>
@@ -54,13 +54,13 @@ export default function Hero() {
         </Reveal>
 
         <Reveal delay={0.16}>
-          <p className={`mt-6 max-w-2xl text-lg leading-relaxed text-muted ${isRtl ? "text-right" : ""}`}>
+          <p className={`mt-5 max-w-2xl text-lg leading-relaxed text-muted ${isRtl ? "text-right" : ""}`}>
             {t("hero.subtitle")}
           </p>
         </Reveal>
 
         <Reveal delay={0.24}>
-          <div className={`mt-8 flex flex-wrap gap-4 ${isRtl ? "justify-start rtl:flex-row-reverse" : ""}`}>
+          <div className={`mt-7 flex flex-wrap gap-4 ${isRtl ? "justify-start rtl:flex-row-reverse" : ""}`}>
             <Magnetic>
               <a
                 href="#work"
