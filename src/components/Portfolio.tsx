@@ -34,23 +34,24 @@ const projectsData = [
     tall: false,
   },
   {
+    slug: "forca",
+    workSlug: "forca",
+    number: "04",
+    image: "/images/projects/forca.jpg",
+    demoUrl: "https://3iiik.github.io/Forca/",
+    githubUrl: "https://github.com/3iiik/Forca",
+    tags: ["Electron", "TypeScript", "WebSocket"],
+    tall: false,
+  },
+  {
     slug: "wilaya",
     workSlug: "wilaya",
-    number: "04",
+    number: "05",
     image: "/images/projects/wilaya.jpg",
     demoUrl: "https://wilaya.vercel.app",
     githubUrl: "https://github.com/3iiik/algeria",
     tags: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
     tall: true,
-  },
-  {
-    slug: "forca",
-    workSlug: "forca",
-    number: "05",
-    image: "/images/projects/forca.jpg",
-    demoUrl: "https://github.com/3iiik/Forca",
-    tags: ["Electron", "TypeScript", "WebSocket"],
-    tall: false,
   },
 ];
 
@@ -88,9 +89,7 @@ export default function Portfolio() {
             return (
               <Reveal
                 key={project.title}
-                className={`flex flex-col gap-10 border-b border-border py-20 last:border-b-0 sm:py-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-20 ${
-                  isReversed ? "" : ""
-                }`}
+                className="flex flex-col gap-10 border-b border-border py-20 last:border-b-0 sm:py-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-20"
               >
                 <div className={isReversed ? "lg:order-2" : ""}>
                   <span className="text-sm text-muted tabular-nums">({data.number})</span>
@@ -150,7 +149,7 @@ export default function Portfolio() {
                   href={`/work/${data.workSlug}`}
                   className={`group relative block overflow-hidden border border-border ${isReversed ? "lg:order-1" : ""}`}
                 >
-                  <div className={`relative w-full ${data.tall ? "aspect-[4/3]" : "aspect-[4/3]"} overflow-hidden bg-surface`}>
+                  <div className="relative aspect-[4/3] w-full overflow-hidden bg-surface">
                     <Image
                       src={data.image}
                       alt={project.title}

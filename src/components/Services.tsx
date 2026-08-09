@@ -55,7 +55,11 @@ export default function Services() {
 
         <div className="mt-14 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
           {items.map((item, i) => (
-            <Reveal key={i} className="group bg-background p-8 transition-colors duration-300 hover:bg-surface" as="div">
+            <Reveal
+              key={i}
+              as="div"
+              className="group bg-background p-8 transition-colors duration-300 hover:bg-surface"
+            >
               <span className="text-xs text-muted tabular-nums">0{i + 1}</span>
               <div className="mt-8 text-foreground">{icons[String(i)]}</div>
               <h3 className="mt-6 text-lg font-medium text-foreground">{item.title}</h3>
