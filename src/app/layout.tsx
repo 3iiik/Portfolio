@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Tajawal, Playfair_Display } from "next/font/google";
+import { Manrope, Tajawal, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 const tajawal = Tajawal({
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "website",
-    locale: "fr_DZ",
+    locale: "en_DZ",
     siteName: "3iik Studio",
     images: [
       {
@@ -65,9 +66,9 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="fr"
+      lang="en"
       dir="ltr"
-      className={`${geistSans.variable} ${tajawal.variable} ${playfair.variable} antialiased`}
+      className={`${manrope.variable} ${tajawal.variable} ${playfair.variable} antialiased`}
     >
       <body className="min-h-screen bg-background text-foreground">
         <script

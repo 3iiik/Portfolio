@@ -52,7 +52,7 @@ export function generateStaticParams() {
 
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
-  const validLocale = locale === "en" || locale === "ar" ? locale : "fr";
+  const validLocale = locale === "fr" || locale === "ar" ? locale : "en";
   const messages = allMessages[validLocale];
 
   return (
