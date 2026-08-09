@@ -71,23 +71,15 @@ export default function HomeSkeleton() {
       <main>
         {/* Hero */}
         <section className="relative flex min-h-screen flex-col overflow-hidden pt-28">
-          <div className="relative mx-auto grid w-full max-w-6xl flex-1 items-center gap-14 px-5 pb-16 sm:px-8 lg:grid-cols-12 lg:gap-10 lg:px-10 lg:pt-24">
-            <div className="lg:col-span-7">
-              <Skeleton className="h-3 w-32" />
-              <Skeleton className="mt-7 h-14 w-full max-w-xl sm:h-16 lg:h-20" />
-              <Skeleton className="mt-2 h-14 w-4/5 max-w-lg sm:h-16" />
-              <Skeleton className="mt-7 h-8 w-full max-w-lg" />
-              <Skeleton className="mt-2 h-8 w-3/4 max-w-md" />
-              <div className="mt-10 flex flex-wrap gap-4">
-                <Skeleton className="h-12 w-40" />
-                <Skeleton className="h-12 w-40" />
-              </div>
-            </div>
-            <div className="lg:col-span-5">
-              <div className="relative">
-                <div className="absolute -inset-3" />
-                <Skeleton className="aspect-[4/5] w-full" />
-              </div>
+          <div className="relative mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center px-5 pb-16 sm:px-8 lg:px-10 lg:pt-32">
+            <Skeleton className="h-3 w-32" />
+            <Skeleton className="mt-7 h-14 w-full max-w-3xl sm:h-20 lg:h-24" />
+            <Skeleton className="mt-2 h-14 w-4/5 max-w-2xl sm:h-20 lg:h-24" />
+            <Skeleton className="mt-8 h-8 w-full max-w-xl" />
+            <Skeleton className="mt-2 h-8 w-3/4 max-w-lg" />
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Skeleton className="h-12 w-40" />
+              <Skeleton className="h-12 w-40" />
             </div>
           </div>
           <div className="relative border-t border-border py-5">

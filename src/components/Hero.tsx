@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { Reveal } from "@/components/ui/reveal";
 import { Magnetic } from "@/components/ui/magnetic";
@@ -35,72 +34,50 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative mx-auto grid w-full max-w-6xl flex-1 items-center gap-14 px-5 pb-16 pt-28 sm:px-8 lg:grid-cols-12 lg:gap-10 lg:px-10 lg:pt-24">
-        <div className="lg:col-span-7">
-          <Reveal>
-            <span className="text-[11px] font-medium uppercase tracking-[0.35em] text-muted">
-              3iik Studio
-            </span>
-          </Reveal>
+      <div className="relative mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center px-5 pb-16 pt-28 sm:px-8 lg:px-10 lg:pt-32">
+        <Reveal>
+          <span className="text-[11px] font-medium uppercase tracking-[0.35em] text-muted">
+            3iik Studio
+          </span>
+        </Reveal>
 
-          <Reveal delay={0.08}>
-            <h1 className={`mt-7 text-[13vw] font-semibold leading-[0.95] tracking-tight text-foreground sm:text-6xl lg:text-7xl ${isRtl ? "text-right" : ""}`}>
-              {t("hero.title")}
-              {accent && (
-                <>
-                  <br />
-                  <span className="text-muted">{accent}</span>
-                </>
-              )}
-            </h1>
-          </Reveal>
+        <Reveal delay={0.08}>
+          <h1 className={`mt-7 max-w-4xl text-[13vw] font-semibold leading-[0.95] tracking-tight text-foreground sm:text-7xl lg:text-8xl ${isRtl ? "text-right" : ""}`}>
+            {t("hero.title")}
+            {accent && (
+              <>
+                <br />
+                <span className="text-muted">{accent}</span>
+              </>
+            )}
+          </h1>
+        </Reveal>
 
-          <Reveal delay={0.16}>
-            <p className={`mt-7 max-w-xl text-lg leading-relaxed text-muted ${isRtl ? "text-right" : ""}`}>
-              {t("hero.subtitle")}
-            </p>
-          </Reveal>
+        <Reveal delay={0.16}>
+          <p className={`mt-8 max-w-2xl text-lg leading-relaxed text-muted ${isRtl ? "text-right" : ""}`}>
+            {t("hero.subtitle")}
+          </p>
+        </Reveal>
 
-          <Reveal delay={0.24}>
-            <div className={`mt-10 flex flex-wrap gap-4 ${isRtl ? "justify-start rtl:flex-row-reverse" : ""}`}>
-              <Magnetic>
-                <a
-                  href="#work"
-                  className="group inline-flex h-12 items-center gap-3 bg-foreground px-7 text-sm font-medium text-background transition-transform hover:bg-foreground/90 active:scale-[0.98]"
-                >
-                  {t("hero.viewProjects")}
-                  <svg className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                  </svg>
-                </a>
-              </Magnetic>
+        <Reveal delay={0.24}>
+          <div className={`mt-10 flex flex-wrap gap-4 ${isRtl ? "justify-start rtl:flex-row-reverse" : ""}`}>
+            <Magnetic>
               <a
-                href="#services"
-                className="inline-flex h-12 items-center border border-border px-7 text-sm font-medium text-foreground transition-colors hover:border-foreground/40"
+                href="#work"
+                className="group inline-flex h-12 items-center gap-3 bg-foreground px-7 text-sm font-medium text-background transition-transform hover:bg-foreground/90 active:scale-[0.98]"
               >
-                {t("hero.viewServices")}
+                {t("hero.viewProjects")}
+                <svg className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
               </a>
-            </div>
-          </Reveal>
-        </div>
-
-        <Reveal delay={0.2} className="lg:col-span-5">
-          <div className="group relative">
-            <div className="absolute -inset-3 border border-border/60" aria-hidden="true" />
-            <div className="relative aspect-[4/5] overflow-hidden bg-surface">
-              <Image
-                src="/images/projects/le-jardin.jpg"
-                alt={t("hero.title")}
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 40vw"
-                className="object-cover opacity-80 grayscale transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" aria-hidden="true" />
-              <div className="absolute bottom-4 left-4 text-xs uppercase tracking-[0.2em] text-muted">
-                3iik · Selected Work
-              </div>
-            </div>
+            </Magnetic>
+            <a
+              href="#services"
+              className="inline-flex h-12 items-center border border-border px-7 text-sm font-medium text-foreground transition-colors hover:border-foreground/40"
+            >
+              {t("hero.viewServices")}
+            </a>
           </div>
         </Reveal>
       </div>
