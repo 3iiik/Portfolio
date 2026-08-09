@@ -2,16 +2,15 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import { Reveal } from "@/components/ui/reveal";
-import { Magnetic } from "@/components/ui/magnetic";
 
 export default function Contact() {
   const { t } = useLanguage();
 
   const links = [
-    { label: "Email", value: "3iikStudio@proton.me", href: "mailto:3iikStudio@proton.me" },
     { label: "GitHub", value: "github.com/3iiik", href: "https://github.com/3iiik" },
-    { label: "Twitter", value: "@3iiik", href: "https://twitter.com/3iiik" },
+    { label: "X", value: "@the3iik", href: "https://x.com/the3iik" },
     { label: "Discord", value: "3iik", href: "https://discord.com/users/3iik" },
+    { label: "LinkedIn", value: "linkedin.com/in/3iik", href: "https://www.linkedin.com/in/3iik/" },
   ];
 
   return (
@@ -52,23 +51,6 @@ export default function Contact() {
             </Reveal>
           ))}
         </div>
-
-        <Reveal delay={0.1}>
-          <div className="mt-16 flex flex-col items-start justify-between gap-8 border-t border-border pt-10 sm:flex-row sm:items-center">
-            <p className="text-sm text-muted">{t("contact.orDivider")}</p>
-            <Magnetic>
-              <a
-                href="mailto:3iikStudio@proton.me"
-                className="group inline-flex items-center gap-3 border border-border px-7 py-4 text-sm font-medium text-foreground transition-colors hover:border-foreground/40"
-              >
-                {t("contact.formSubmit")}
-                <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                </svg>
-              </a>
-            </Magnetic>
-          </div>
-        </Reveal>
       </div>
     </section>
   );

@@ -48,6 +48,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@the3iik",
+    creator: "@the3iik",
     images: ["/og-image.png"],
   },
   robots: {

@@ -315,15 +315,7 @@
   "contact": {
     "label": "Me Contacter",
     "heading": "Construisons Votre Prochaine Solution Web",
-    "description": "Prêt à passer à l'étape suivante ? Contactez-moi et créons ensemble quelque chose de formidable.",
-    "orDivider": "ou envoyez un message",
-    "formName": "Nom Complet",
-    "formNamePlaceholder": "Votre nom",
-    "formEmail": "Adresse Email",
-    "formEmailPlaceholder": "vous@exemple.com",
-    "formMessage": "Message",
-    "formMessagePlaceholder": "Parlez-moi de votre projet...",
-    "formSubmit": "Envoyer le Message"
+    "description": "Prêt à passer à l'étape suivante ? Contactez-moi et créons ensemble quelque chose de formidable."
   },
   "footer": {
     "description": "Des solutions web modernes pour les entreprises. J'aide les entreprises à obtenir des solutions rapides, modernes et adaptées aux mobiles qui attirent des clients et inspirent confiance.",

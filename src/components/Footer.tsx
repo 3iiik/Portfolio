@@ -22,14 +22,14 @@ export default function Footer() {
         </p>
 
         <div className="flex items-center gap-6">
-          <a href="mailto:3iikStudio@proton.me" className="text-xs text-muted transition-colors hover:text-foreground">
-            Email
-          </a>
           <a href="https://github.com/3iiik" target="_blank" rel="noopener noreferrer" className="text-xs text-muted transition-colors hover:text-foreground">
             GitHub
           </a>
-          <a href="https://twitter.com/3iiik" target="_blank" rel="noopener noreferrer" className="text-xs text-muted transition-colors hover:text-foreground">
-            Twitter
+          <a href="https://x.com/the3iik" target="_blank" rel="noopener noreferrer" className="text-xs text-muted transition-colors hover:text-foreground">
+            X
+          </a>
+          <a href="https://www.linkedin.com/in/3iik/" target="_blank" rel="noopener noreferrer" className="text-xs text-muted transition-colors hover:text-foreground">
+            LinkedIn
           </a>
         </div>
       </div>

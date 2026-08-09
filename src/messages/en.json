@@ -315,15 +315,7 @@
   "contact": {
     "label": "Get in Touch",
     "heading": "Let's Build Your Next Web Solution",
-    "description": "Ready to take your business to the next level? Get in touch and let's create something great together.",
-    "orDivider": "or send a message",
-    "formName": "Full Name",
-    "formNamePlaceholder": "Your name",
-    "formEmail": "Email Address",
-    "formEmailPlaceholder": "you@example.com",
-    "formMessage": "Message",
-    "formMessagePlaceholder": "Tell me about your project...",
-    "formSubmit": "Send Message"
+    "description": "Ready to take your business to the next level? Get in touch and let's create something great together."
   },
   "footer": {
     "description": "Modern Web Solutions for Businesses. I help businesses get fast, modern, and mobile-friendly web solutions that attract customers and build trust.",
